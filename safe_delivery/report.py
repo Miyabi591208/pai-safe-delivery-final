@@ -31,6 +31,7 @@ def build():
     rows = json.loads(Path('results/heldout/episodes.json').read_text())
     summary = json.loads(Path('results/heldout/summary.json').read_text())
     training = json.loads(Path('models/training.json').read_text())
+    video = json.loads(Path('output/video_manifest.json').read_text())
     a, s = summary['astar'], summary['smooth']
     jerk_reduction = (1-s['paired_mean_jerk_rms_m_s3']/a['paired_mean_jerk_rms_m_s3'])*100
     recognition = sum(r['perception']['label']==r['true_label'] for r in rows if r['method']=='smooth')
@@ -129,7 +130,9 @@ def build():
                  'python -m safe_delivery.media',
                  'python -m safe_delivery.report']:
         text(60, y-3, line, 10, TEAL); y -= 20
-    y = para(y-4, '学習の再実行：python -m safe_delivery.perception。学習済み重み、乱数seed、評価プロトコル、manifestのSHA-256、各走行JSON/NPZ、テストを同梱する。動画は約92秒・1280×720・20fps・字幕付き。走行映像は1倍速で、結果確認の静止表示を明記した。', 10, NAVY, 16)
+    y = para(y-4, f"学習の再実行：python -m safe_delivery.perception。学習済み重み、乱数seed、評価プロトコル、manifestのSHA-256、各走行JSON/NPZ、テストを同梱する。動画は約{video['duration_seconds']:.0f}秒・1280×720・{video['fps']}fps・字幕付き。走行映像は1倍速で、結果確認の静止表示を明記した。", 10, NAVY, 16)
+    if 'composition' in video:
+        y = para(y, '冒頭・末尾には講座配布のOP・EDを使用し、0.4秒のフェードで接続した。音声はない。配布素材そのものは公開ソースに含めない。', 10, NAVY, 16)
     y = heading(y-15, '06', '制約と次の改善')
     y = para(y, '固定された荷物領域の色分類であり、一般物体検出ではない。地図・自己位置は既知の理想値で、SLAMやセンサ誤差は扱わない。棚は静止、経路は開始時に計画し、歩行者に対する再計画は未実装。物理モデルは平面移動に制約し、実際の車輪駆動を再現していない。', 10, NAVY, 16)
     y = para(y-5, '次の段階では、未知の棚構造・動く障害物・画像上の荷物位置の変化を含めて評価し、必要な改善を一つずつ加える。制御パラメータの最適性や実機安全性は主張しない。', 10, NAVY, 16)

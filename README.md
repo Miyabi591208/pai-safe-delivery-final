@@ -54,6 +54,8 @@ python -m safe_delivery.simulation --split heldout
 
 ```bash
 python -m safe_delivery.media
+# 講座配布のOP・EDを利用する場合、reportの前に実行（素材は別途用意）：
+# python -m safe_delivery.compose --opening /path/to/OP.mp4 --ending /path/to/ED.mp4
 python -m safe_delivery.report
 python -m safe_delivery.verify
 ```
@@ -72,6 +74,7 @@ ZIPを再作成する場合は`python -m safe_delivery.package --destination ../
 | `safe_delivery/planning.py` | 膨張地図、A*、経路短縮、指令変化の制限 |
 | `safe_delivery/simulation.py` | シーン生成、MJCF、力制御、接触判定、比較実験 |
 | `safe_delivery/media.py` | 実走行の再描画、字幕、実測値に基づく動画 |
+| `safe_delivery/compose.py` | 配布OP・EDの接続、0.4秒フェード、1倍速保持 |
 | `safe_delivery/report.py` | 実測値に基づく提出PDF |
 | `safe_delivery/verify.py` | 成果物の整合性確認 |
 | `tests/test_system.py` | 9項目の認識・経路・物理動作テスト |

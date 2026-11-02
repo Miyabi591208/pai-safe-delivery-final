@@ -7,10 +7,10 @@
   "pdf_font_embedded": true,
   "pdf_status": "verified",
   "video": {
-    "frames": 1836,
-    "seconds": 91.8,
+    "frames": 2912,
+    "seconds": 97.06,
     "decode_errors": 0
   },
-  "text_files_scanned": 17,
+  "text_files_scanned": 18,
   "note": "Visual review is documented separately; limited automated checks are not a universal privacy guarantee."
 }

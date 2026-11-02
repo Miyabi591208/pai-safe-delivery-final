@@ -1,86 +1,96 @@
 {
-  "fps": 20,
-  "frames": 1836,
-  "duration_seconds": 91.8,
+  "fps": 30,
+  "frames": 2912,
+  "duration_seconds": 97.06,
   "resolution": [
     1280,
     720
   ],
-  "audio": "none; Japanese captions",
+  "audio": "none; supplied OP/ED also have no audio",
   "playback": "Simulation segments 1x, plus clearly marked stills",
   "chapters": [
     {
-      "title": "課題と目的",
+      "title": "配布OP",
       "start_seconds": 0.0,
+      "duration_seconds": 3.066666666666667
+    },
+    {
+      "title": "課題と目的",
+      "start_seconds": 2.666667,
       "duration_seconds": 7
     },
     {
       "title": "構成",
-      "start_seconds": 7.0,
+      "start_seconds": 9.666667,
       "duration_seconds": 9
     },
     {
       "title": "比較：直進のみでは棚に衝突",
-      "start_seconds": 16.0,
+      "start_seconds": 18.666667,
       "duration_seconds": 2.65,
       "sim_time": 2.65,
       "speed": "1x"
     },
     {
       "title": "結果静止表示",
-      "start_seconds": 18.65,
+      "start_seconds": 21.316667,
       "duration_seconds": 3
     },
     {
       "title": "実演 1：赤い荷物を赤い搬送先へ",
-      "start_seconds": 21.65,
+      "start_seconds": 24.316667,
       "duration_seconds": 12.85,
       "sim_time": 12.83,
       "speed": "1x"
     },
     {
       "title": "結果静止表示",
-      "start_seconds": 34.5,
+      "start_seconds": 37.166667,
       "duration_seconds": 3
     },
     {
       "title": "実演 2：緑の荷物 / 別の配置・照明",
-      "start_seconds": 37.5,
+      "start_seconds": 40.166667,
       "duration_seconds": 12.55,
       "sim_time": 12.51,
       "speed": "1x"
     },
     {
       "title": "結果静止表示",
-      "start_seconds": 50.05,
+      "start_seconds": 52.716667,
       "duration_seconds": 3
     },
     {
       "title": "実演 3：青い荷物 / 別の配置・質量",
-      "start_seconds": 53.05,
+      "start_seconds": 55.716667,
       "duration_seconds": 9.75,
       "sim_time": 9.74,
       "speed": "1x"
     },
     {
       "title": "結果静止表示",
-      "start_seconds": 62.8,
+      "start_seconds": 65.466667,
       "duration_seconds": 3
     },
     {
       "title": "未知色の拒否",
-      "start_seconds": 65.8,
+      "start_seconds": 68.466667,
       "duration_seconds": 7
     },
     {
       "title": "実測結果",
-      "start_seconds": 72.8,
+      "start_seconds": 75.466667,
       "duration_seconds": 10
     },
     {
       "title": "工夫と限界",
-      "start_seconds": 82.8,
+      "start_seconds": 85.466667,
       "duration_seconds": 9
+    },
+    {
+      "title": "配布ED",
+      "start_seconds": 94.066667,
+      "duration_seconds": 3.0
     }
   ],
   "demos": [
@@ -275,5 +285,26 @@
     ],
     "saturation": 0.0,
     "accepted": false
+  },
+  "composition": {
+    "core_duration_seconds": 91.8,
+    "core_fps": 20,
+    "dissolve_seconds": 0.4,
+    "op_duration_seconds": 3.066666666666667,
+    "ed_duration_seconds": 3.0,
+    "core_start_seconds": 2.666666666666667,
+    "source_assets": [
+      {
+        "role": "opening",
+        "filename": "PAI応用1_最終課題_OP.mp4",
+        "sha256": "42c6d8ef4939590d4db5b1b121f1d0ed2028619a5c78af4e14db23d67f853ac6"
+      },
+      {
+        "role": "ending",
+        "filename": "PAI応用1_最終課題_ED.mp4",
+        "sha256": "c2df9219ab6ef5fd272ff204b0815f890ddfca4d450896a946312b7f201589e3"
+      }
+    ],
+    "note": "Course-provided assets are not included in the public repository."
   }
 }
