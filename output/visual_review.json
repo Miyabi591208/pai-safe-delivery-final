@@ -1,5 +1,5 @@
 {
-  "review_date": "2026-11-02",
+  "review_date": "2026-11-03",
   "reviewer": "Codex",
   "pdf": {
     "pages_rendered_and_viewed": [
@@ -7,10 +7,12 @@
       2,
       3
     ],
-    "render_width_height_limit_px": 1000,
+    "render_width_height_limit_px": 1300,
     "japanese_glyphs": "visible; TrueType font embedded",
     "layout": "no clipping or overlap observed",
-    "account_id": "141960"
+    "account_id": "141960",
+    "review_date": "2026-11-03",
+    "revision": "Clarified contribution, controlled comparison, measured effect, and limits in Japanese."
   },
   "video": {
     "sampled_seconds_viewed": [
@@ -32,6 +34,7 @@
     "source": "MuJoCo rollouts, matched against recorded evaluation",
     "note": "Sampled visual inspection plus full decode check; not a claim of manually viewing every frame.",
     "account_id": "141960",
-    "composition": "Course OP and ED; 0.4-second dissolves; 97.06 seconds"
+    "composition": "Course OP and ED; 0.4-second dissolves; 97.06 seconds",
+    "review_date": "2026-11-02"
   }
 }

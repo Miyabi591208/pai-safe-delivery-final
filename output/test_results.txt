@@ -9,6 +9,6 @@ test_unseen_synthetic_colors (test_system.DeliveryTests.test_unseen_synthetic_co
 test_vector_acceleration_bound (test_system.DeliveryTests.test_vector_acceleration_bound) ... ok
 
 ----------------------------------------------------------------------
-Ran 9 tests in 0.244s
+Ran 9 tests in 0.289s
 
 OK

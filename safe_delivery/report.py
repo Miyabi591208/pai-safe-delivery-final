@@ -64,11 +64,16 @@ def build():
         text(46, height-32, 'PHYSICAL AI / APPLIED FINAL PROJECT', 10, '#7be1ca')
         text(46, height-64, section, 22, '#ffffff')
         c.setStrokeColor(HexColor('#d9e2e8')); c.line(48, 48, width-48, 48)
-        text(48, 31, f'{identity}  |  MuJoCo 3.3.7  |  2026-11-02', 8.5, GRAY)
+        text(48, 31, f'{identity}  |  MuJoCo 3.3.7  |  2026-11-03', 8.5, GRAY)
         text(width-92, 31, f'{num} / 3', 8.5, GRAY)
 
     page(1, 'AIで仕分け、滑らかに届ける')
-    y = para(724, '目的：搭載済みの荷物をカメラ画像から3色に分類し、棚を避けて正しい搬送先に届ける。認識AIと古典的な経路計画を組み合わせ、搬送成功に加えて動きの滑らかさを検証する。')
+    y = para(724, 'カメラで荷物の色を見分け、棚を避けて対応する搬送先に届ける。本作品では、目的地に着くことに加え、動きの急な変化を抑える制御と、その効果を確かめる評価方法を工夫した。')
+    c.setFillColor(HexColor('#e8f6f1')); c.roundRect(48, y-87, 499, 77, 6, fill=1, stroke=0)
+    text(60, y-30, '一番の工夫：同じ計画経路でも、速度の変え方を滑らかにする', 12, TEAL)
+    text(60, y-50, f'加速度制限を追加し、平均ジャークRMSを{jerk_reduction:.1f}%低減。', 11)
+    text(60, y-70, f"両方式とも30/30件で搬送成功。所要時間は平均{s['paired_mean_sim_time']-a['paired_mean_sim_time']:.2f}秒増加。", 10)
+    y -= 100
     y = heading(y-13, '01', '実装したシステム')
     boxes = [('画像から判断', '色分類MLP'), ('地図から計画', 'A* + 経路短縮'), ('力入力で搬送', '速度・加速度制御')]
     for i, (top, bottom) in enumerate(boxes):
@@ -77,26 +82,28 @@ def build():
         text(x+12, y-13, top, 11, TEAL); text(x+12, y-34, bottom, 10.5)
         if i<2: text(x+159, y-25, '>', 12, TEAL)
     y -= 75
-    y = para(y, 'AI：正規化したRGB値（固定領域の画素中央値）を入力する3→16→3のMLP。合成データ6,000件で教師あり学習し、実際のMuJoCoカメラ画像で推論する。色の正解値を制御器へ直接渡さない。')
-    y = para(y-5, '制御：既知の棚配置を機体半径と余裕幅で膨張させ、A*で経路を探索。速度指令の変化を0.55 m/s²以内に制限し、速度サーボから力を入力する。位置は初期化後に書き換えず、MuJoCoで積分する。')
+    y = para(y, '認識：小型ニューラルネットワーク（MLP）を合成RGBデータ6,000件で学習。カメラ画像の荷物領域から赤・緑・青を推定し、搬送先を選ぶ。出力確率・彩度・明るさの基準を一つでも満たさなければ、搬送を開始しない。')
+    y = para(y-5, '移動：棚との間に機体の大きさを考慮した余裕を設け、A*で経路を計画する。速度指令の変化を0.55 m/s²以内に制限し、力を加えて台車を動かす。位置を直接書き換えず、MuJoCoの物理演算で移動させる。')
     image_top = y-10
-    image_height = 253
+    image_height = 210
     c.drawImage('output/demo_success.png', 48, image_top-image_height, width=499, height=image_height, preserveAspectRatio=True, anchor='c')
     y = image_top-image_height-19
     y = para(y, '図1　評価seed 100の実演。緑の点線は計画経路。右上は搭載カメラ画像。赤い荷物を赤い区画まで搬送した実シミュレーションの最終フレーム。', 9.2, GRAY, 14)
-    para(y-8, '対象範囲：平面2自由度の簡略化した全方向移動台車。荷物は車体に固定済み。把持・荷降ろし、車輪接地の詳細モデル、実機実験は含まない。', 9.6, GRAY, 15)
+    y = para(y-8, '既存の大規模モデルの追加学習ではなく、色分類AI・経路計画・制御を本課題向けに組み合わせた。対象は平面移動の簡略化した台車で、荷物は固定済み。把持・荷降ろし・実機実験は含まない。', 9.6, GRAY, 15)
+    if y < 55:
+        raise RuntimeError(f'Page 1 overflows: y={y}')
     c.showPage()
 
     page(2, '評価：成功率と滑らかさを分けて測る')
-    y = heading(722, '02', '評価条件を開発時から分離')
+    y = heading(722, '02', '同じ条件で、加速度制限の効果を比べる')
     y = para(y, '開発用3配置（seed 10～12）で動作を確認後、制御設定を固定。未使用30配置（seed 100～129、各色10件）を3方式で比較した。開始位置・棚位置・色・照明・車体質量を変化させ、各方式には同一条件を与えた。')
     y = para(y-5, '成功条件：40秒以内に正しい搬送先へ到着し、中心から0.12 m未満、速度0.10 m/s未満、棚との接触なし。接触はMuJoCoの接触情報から判定し、その時点で失敗として終了する。')
     y -= 12
     columns = [48, 218, 315, 420]
-    headers = ['方式', '搬送成功', '接触あり', '対応平均時間']
+    headers = ['方式', '搬送成功', '接触あり', '平均搬送時間']
     c.setFillColor(HexColor(NAVY)); c.rect(48, y-10, 499, 28, fill=1, stroke=0)
     for x, h in zip(columns, headers): text(x+9, y, h, 10, '#ffffff')
-    for i, (name, key) in enumerate([('直進のみ（参考）', 'direct'), ('A*', 'astar'), ('A* + 加速度制限', 'smooth')]):
+    for i, (name, key) in enumerate([('直進のみ（参考）', 'direct'), ('A* + 速度制御（比較）', 'astar'), ('同方式 + 加速度制限（提案）', 'smooth')]):
         yy = y-37-i*31
         if i==2:
             c.setFillColor(HexColor('#e8f6f1')); c.rect(48, yy-10, 499, 29, fill=1, stroke=0)
@@ -105,39 +112,43 @@ def build():
                   '-' if key=='direct' else f"{q['paired_mean_sim_time']:.2f} s"]
         for x, value in zip(columns, values): text(x+9, yy, value, 10)
     y -= 142
-    y = para(y, '直進は障害物回避を持たない弱い参考方式。主要な比較は同じA*経路を使う2方式であり、両方成功した30配置を対応させて比較した。直進失敗例の短い終了時間を搬送時間と混同しない。', 9.6, GRAY, 15)
-    y = heading(y-15, '03', '主結果：滑らかさと速度のトレードオフ')
-    for name, key, color in [('A*', 'astar', '#6a7d91'), ('A* + 加速度制限', 'smooth', TEAL)]:
+    y = para(y, '比較方式と提案方式では、色分類AI・計画経路・速度制御を共通にし、速度指令の加速度制限の有無だけを変えた。両方成功した同じ30配置で時間と滑らかさを比較した。直進は障害物回避の必要性を示す参考例である。', 9.6, GRAY, 15)
+    y = heading(y-15, '03', '搬送成功を保ち、動きの急な変化を抑えた')
+    y = para(y, 'ジャークは「加速度がどれだけ急に変わるか」を表す。走行ごとにその大きさをRMS（二乗平均平方根）で求め、30走行の平均を比べた。値が小さいほど、加速度の変化が穏やかである。', 10, NAVY, 16)
+    y -= 8
+    for name, key, color in [('比較：加速度制限なし', 'astar', '#6a7d91'), ('提案：加速度制限あり', 'smooth', TEAL)]:
         value = summary[key]['paired_mean_jerk_rms_m_s3']
         text(48, y, name, 10)
         c.setFillColor(HexColor(color)); c.roundRect(198, y-4, value*60, 14, 3, fill=1, stroke=0)
         text(448, y, f'{value:.3f} m/s³', 10, color)
         y -= 31
-    y = para(y-2, f"図2　各走行のジャークRMSの平均。0.05秒間隔の実速度から2階差分で算出。提案方式で{jerk_reduction:.1f}%減少した。一方、時間は{a['paired_mean_sim_time']:.2f}秒から{s['paired_mean_sim_time']:.2f}秒へ増加し、経路長も{a['paired_mean_path_m']:.2f} mから{s['paired_mean_path_m']:.2f} mへ増加した。", 10, NAVY, 16)
+    y = para(y-2, f"図2　平均ジャークRMSは{jerk_reduction:.1f}%減少。所要時間は{a['paired_mean_sim_time']:.2f}秒から{s['paired_mean_sim_time']:.2f}秒へ、実際の走行距離は{a['paired_mean_path_m']:.2f} mから{s['paired_mean_path_m']:.2f} mへ増加した。速度と滑らかさの両面を示し、今回の改善を評価した。指標は0.05秒ごとの実速度の2階差分から算出した。", 10, NAVY, 16)
     y = para(y-8, f"認識結果：独立な合成データ{training['test_n']:,}件で{training['test_accuracy']*100:.1f}%、評価時の実レンダリング画像では{recognition}/30件が正しい色に分類された。灰色は受理条件を満たさず、走行開始を拒否することを別テストで確認した。", 10, NAVY, 16)
-    para(y-8, '解釈上の限界：30/30は一般環境での100%成功を意味しない。独立ベルヌーイ試行を仮定したWilson 95%区間は約88.6～100%。この評価は同じ棚構造の摂動に限定される。ジャークは荷物の破損を直接測る指標ではない。', 9.5, GRAY, 15)
+    y = para(y-8, '評価の範囲：30/30は一般環境での100%成功を意味しない。独立試行を仮定した成功率のWilson 95%区間は約88.6～100%。同じ棚構造で位置などを変えた評価に限られ、荷物の破損や実機の安全性は測っていない。', 9.5, GRAY, 15)
+    if y < 55:
+        raise RuntimeError(f'Page 2 overflows: y={y}')
     c.showPage()
 
     page(3, '工夫・再現方法・残る課題')
-    y = heading(722, '04', 'これまでの経験を活かした工夫')
-    y = para(y, '競技で局所的な成功率と提出スコアの差を経験したことから、少数の成功映像だけで評価しない方針にした。開発と評価の配置を分け、全90走行の成否・接触・時間・軌跡を保存する。動画は事前に決めた評価先頭3配置を使用し、記録済みの結果と一致することを確認した。')
-    y = para(y-5, 'AIの役割を色分類に絞り、経路と低レベル制御を分離したため、失敗原因を追いやすい。未知色を無理に3色へ振り分けないため、出力確率0.80、彩度0.30、明るさ0.08の受理条件を併用する。ただし一般的な未知物体検出ではない。')
+    y = heading(722, '04', '何を工夫し、どこまで確かめたか')
+    for title, detail in [
+        ('1. 動きの急な変化を抑える', f'A*と速度制御に加速度制限を追加した。同じ30配置で搬送成功を保ち、平均ジャークRMSを{jerk_reduction:.1f}%低減した。今回、比較実験で効果を確認した中心的な工夫である。'),
+        ('2. 判断が難しいときは動かさない', '出力確率0.80・彩度0.30・明るさ0.08の基準をすべて満たす場合だけ搬送する。灰色と暗い画像の拒否をテストした。あらゆる未知色を検出できるとは限らない。'),
+        ('3. 学習時から見え方に変化をつける', '明るさ・色味・ノイズを変えた6,000件で色分類AIを学習した。評価用のカメラ画像30件で色を正しく分類した。ただし、データの変化を加えない学習との比較は行っていない。'),
+        ('4. 成功例だけで性能を判断しない', '競技で手元の評価と提出結果の差を経験し、開発3配置と評価30配置を分離した。全90走行を記録し、動画の3配置も事前に決めた。成功率だけでなく、接触・時間・滑らかさを示した。')]:
+        text(48, y, title, 11, TEAL); y -= 19
+        y = para(y, detail, 10, NAVY, 15)-8
     y = heading(y-15, '05', '再現方法と提出物')
-    y = para(y, 'Python 3.12、MuJoCo 3.3.7、NumPy 2.3.4。学習・制御・物理演算はCPUで実行。macOS arm64で検証した。描画にはOpenGLが必要。フォント・OS・数値ライブラリにより描画や数値に小差が生じうる。')
-    for line in ['python -m pip install -r requirements.txt',
-                 'python -m unittest discover -s tests -v',
-                 'python -m safe_delivery.simulation --split heldout',
-                 'python -m safe_delivery.media',
-                 'python -m safe_delivery.report']:
-        text(60, y-3, line, 10, TEAL); y -= 20
-    y = para(y-4, f"学習の再実行：python -m safe_delivery.perception。学習済み重み、乱数seed、評価プロトコル、manifestのSHA-256、各走行JSON/NPZ、テストを同梱する。動画は約{video['duration_seconds']:.0f}秒・1280×720・{video['fps']}fps・字幕付き。走行映像は1倍速で、結果確認の静止表示を明記した。", 10, NAVY, 16)
+    y = para(y, 'Python 3.12、MuJoCo 3.3.7、NumPy 2.3.4を使用し、macOS arm64で検証。学習・制御・物理演算はCPUで実行し、描画にはOpenGLを使用する。ソース、重み、評価条件、全走行の記録、9項目のテストを同梱した。', 10, NAVY, 15)
+    y = para(y-4, 'READMEに環境構築・再学習・評価・動画とPDFの再生成手順を記載した。評価の実行コマンド：', 10, NAVY, 15)
+    text(60, y-3, 'python -m safe_delivery.simulation --split heldout', 10, TEAL); y -= 23
+    y = para(y, f"動画は約{video['duration_seconds']:.0f}秒・1280×720・{video['fps']}fps。走行は1倍速で、結果確認の静止表示を明記した。", 10, NAVY, 15)
     if 'composition' in video:
-        y = para(y, '冒頭・末尾には講座配布のOP・EDを使用し、0.4秒のフェードで接続した。音声はない。配布素材そのものは公開ソースに含めない。', 10, NAVY, 16)
+        y = para(y, '講座配布のOP・EDを0.4秒のフェードで接続。音声はなく日本語字幕で説明する。配布素材自体は公開ソースに含めない。', 10, NAVY, 15)
     y = heading(y-15, '06', '制約と次の改善')
-    y = para(y, '固定された荷物領域の色分類であり、一般物体検出ではない。地図・自己位置は既知の理想値で、SLAMやセンサ誤差は扱わない。棚は静止、経路は開始時に計画し、歩行者に対する再計画は未実装。物理モデルは平面移動に制約し、実際の車輪駆動を再現していない。', 10, NAVY, 16)
-    y = para(y-5, '次の段階では、未知の棚構造・動く障害物・画像上の荷物位置の変化を含めて評価し、必要な改善を一つずつ加える。制御パラメータの最適性や実機安全性は主張しない。', 10, NAVY, 16)
+    y = para(y, '荷物の画像上の位置は固定し、地図・自己位置は既知とする。実際の車輪駆動、動く障害物への再計画、実機での動作は未検証である。次は棚構造・障害物の動き・荷物の見える位置を変え、適用範囲を確かめる。', 10, NAVY, 15)
     y = heading(y-15, '07', '参照・制作について')
-    y = para(y, '課題要件：Physical AI 応用1「最終課題（10/19改訂版）」1～4頁。実装は課題サンプルのコピーではなく、本課題向けに新規作成。生成AI（Codex）を設計・実装・資料作成に使用し、記載した実測値は同梱の実行記録から集計した。', 9.5, GRAY, 14)
+    y = para(y, '課題要件：Physical AI 応用1「最終課題（10/19改訂版）」1～4頁。本課題向けに新規実装し、生成AI（Codex）を設計・実装・資料作成に使用した。既存手法を目的に合わせて組み合わせた作品であり、新しい学習アルゴリズムの提案ではない。', 9.5, GRAY, 14)
     for title, url in [('MuJoCo公式Python文書', 'https://mujoco.readthedocs.io/en/3.3.7/python.html'),
                        ('MuJoCo公式MJCF仕様', 'https://mujoco.readthedocs.io/en/3.3.7/XMLreference.html')]:
         text(48, y, title, 9, TEAL); text(48, y-13, url, 8.5, GRAY)
