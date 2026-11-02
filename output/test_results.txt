@@ -1,0 +1,14 @@
+test_blocked_map_and_bad_start_rejected (test_system.DeliveryTests.test_blocked_map_and_bad_start_rejected) ... ok
+test_gray_and_dark_rejected (test_system.DeliveryTests.test_gray_and_dark_rejected) ... ok
+test_physics_baseline_collision_detected (test_system.DeliveryTests.test_physics_baseline_collision_detected) ... ok
+test_physics_smooth_delivers_with_lower_jerk (test_system.DeliveryTests.test_physics_smooth_delivers_with_lower_jerk) ... ok
+test_planner_has_clear_segments (test_system.DeliveryTests.test_planner_has_clear_segments) ... ok
+test_rendered_recognition_all_classes (test_system.DeliveryTests.test_rendered_recognition_all_classes) ... ok
+test_rendered_unknown_cargo_does_not_start (test_system.DeliveryTests.test_rendered_unknown_cargo_does_not_start) ... ok
+test_unseen_synthetic_colors (test_system.DeliveryTests.test_unseen_synthetic_colors) ... ok
+test_vector_acceleration_bound (test_system.DeliveryTests.test_vector_acceleration_bound) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.291s
+
+OK

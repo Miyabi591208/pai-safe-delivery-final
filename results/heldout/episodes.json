@@ -1,0 +1,3992 @@
+[
+  {
+    "seed": 100,
+    "method": "direct",
+    "success": false,
+    "goal_reached": false,
+    "collision": true,
+    "reason": "collision",
+    "perception": {
+      "label": 0,
+      "confidence": 0.9660531795266929,
+      "rgb": [
+        1.0,
+        0.5058823529411764,
+        0.43529411764705883
+      ],
+      "saturation": 0.5647058823529412,
+      "accepted": true
+    },
+    "true_label": 0,
+    "sim_time": 2.65,
+    "path_m": 1.3873347324182417,
+    "accel_rms_m_s2": 0.4856762085508967,
+    "jerk_rms_m_s3": 1.5397718851415965,
+    "command_accel_max": 4.002966042486721e-15,
+    "final_xy": [
+      -1.1822377203502494,
+      -0.8636105125292554
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.786328943127831
+      ],
+      [
+        2.25,
+        2.1
+      ]
+    ]
+  },
+  {
+    "seed": 100,
+    "method": "astar",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 0,
+      "confidence": 0.9660531795266929,
+      "rgb": [
+        1.0,
+        0.5058823529411764,
+        0.43529411764705883
+      ],
+      "saturation": 0.5647058823529412,
+      "accepted": true
+    },
+    "true_label": 0,
+    "sim_time": 12.01,
+    "path_m": 6.49112680699133,
+    "accel_rms_m_s2": 0.3651295869331997,
+    "jerk_rms_m_s3": 3.029030390451768,
+    "command_accel_max": 9.494607882551493,
+    "final_xy": [
+      2.2578249018479353,
+      2.1015596278041286
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.786328943127831
+      ],
+      [
+        -1.3,
+        0.30000000000000004
+      ],
+      [
+        -0.2,
+        1.6
+      ],
+      [
+        2.25,
+        2.1
+      ]
+    ]
+  },
+  {
+    "seed": 100,
+    "method": "smooth",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 0,
+      "confidence": 0.9660531795266929,
+      "rgb": [
+        1.0,
+        0.5058823529411764,
+        0.43529411764705883
+      ],
+      "saturation": 0.5647058823529412,
+      "accepted": true
+    },
+    "true_label": 0,
+    "sim_time": 12.83,
+    "path_m": 6.615255156146502,
+    "accel_rms_m_s2": 0.24799988065256204,
+    "jerk_rms_m_s3": 0.6683409266239079,
+    "command_accel_max": 0.5500000000000012,
+    "final_xy": [
+      2.353156436773041,
+      2.1163063794229044
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.786328943127831
+      ],
+      [
+        -1.3,
+        0.30000000000000004
+      ],
+      [
+        -0.2,
+        1.6
+      ],
+      [
+        2.25,
+        2.1
+      ]
+    ]
+  },
+  {
+    "seed": 101,
+    "method": "direct",
+    "success": false,
+    "goal_reached": false,
+    "collision": true,
+    "reason": "collision",
+    "perception": {
+      "label": 1,
+      "confidence": 0.952881531676161,
+      "rgb": [
+        0.4745098039215686,
+        1.0,
+        0.5882352941176471
+      ],
+      "saturation": 0.5254901960784314,
+      "accepted": true
+    },
+    "true_label": 1,
+    "sim_time": 2.21,
+    "path_m": 1.1837345212917036,
+    "accel_rms_m_s2": 0.5925958019409298,
+    "jerk_rms_m_s3": 2.323549680320466,
+    "command_accel_max": 2.7755575615628914e-15,
+    "final_xy": [
+      -1.1462106389266487,
+      -1.3090578149085423
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.7349344959589297
+      ],
+      [
+        2.25,
+        0.0
+      ]
+    ]
+  },
+  {
+    "seed": 101,
+    "method": "astar",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 1,
+      "confidence": 0.952881531676161,
+      "rgb": [
+        0.4745098039215686,
+        1.0,
+        0.5882352941176471
+      ],
+      "saturation": 0.5254901960784314,
+      "accepted": true
+    },
+    "true_label": 1,
+    "sim_time": 11.54,
+    "path_m": 6.2064784212618065,
+    "accel_rms_m_s2": 0.4479798150605368,
+    "jerk_rms_m_s3": 4.114229055571683,
+    "command_accel_max": 10.865195755258403,
+    "final_xy": [
+      2.245907629749794,
+      -0.0101746845504583
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.7349344959589297
+      ],
+      [
+        0.0,
+        -2.5
+      ],
+      [
+        1.3,
+        -2.4000000000000004
+      ],
+      [
+        2.25,
+        0.0
+      ]
+    ]
+  },
+  {
+    "seed": 101,
+    "method": "smooth",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 1,
+      "confidence": 0.952881531676161,
+      "rgb": [
+        0.4745098039215686,
+        1.0,
+        0.5882352941176471
+      ],
+      "saturation": 0.5254901960784314,
+      "accepted": true
+    },
+    "true_label": 1,
+    "sim_time": 12.51,
+    "path_m": 6.382624210730439,
+    "accel_rms_m_s2": 0.28398582438231457,
+    "jerk_rms_m_s3": 0.7472628425117146,
+    "command_accel_max": 0.550000000000001,
+    "final_xy": [
+      2.2738810652849595,
+      0.07380761675858694
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.7349344959589297
+      ],
+      [
+        0.0,
+        -2.5
+      ],
+      [
+        1.3,
+        -2.4000000000000004
+      ],
+      [
+        2.25,
+        0.0
+      ]
+    ]
+  },
+  {
+    "seed": 102,
+    "method": "direct",
+    "success": false,
+    "goal_reached": false,
+    "collision": true,
+    "reason": "collision",
+    "perception": {
+      "label": 2,
+      "confidence": 0.9527428264147423,
+      "rgb": [
+        0.4627450980392157,
+        0.6235294117647059,
+        1.0
+      ],
+      "saturation": 0.5372549019607843,
+      "accepted": true
+    },
+    "true_label": 2,
+    "sim_time": 4.1,
+    "path_m": 2.280341800776579,
+    "accel_rms_m_s2": 0.41730615060900783,
+    "jerk_rms_m_s3": 1.4985090177360336,
+    "command_accel_max": 2.3714374201337733e-15,
+    "final_xy": [
+      0.04598509361522668,
+      -1.9142200216785772
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.7206176705829481
+      ],
+      [
+        2.25,
+        -2.1
+      ]
+    ]
+  },
+  {
+    "seed": 102,
+    "method": "astar",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 2,
+      "confidence": 0.9527428264147423,
+      "rgb": [
+        0.4627450980392157,
+        0.6235294117647059,
+        1.0
+      ],
+      "saturation": 0.5372549019607843,
+      "accepted": true
+    },
+    "true_label": 2,
+    "sim_time": 9.02,
+    "path_m": 4.71192525864997,
+    "accel_rms_m_s2": 0.44430843890973337,
+    "jerk_rms_m_s3": 3.9576595662115786,
+    "command_accel_max": 9.253660526317157,
+    "final_xy": [
+      2.245821716864145,
+      -2.102291602507458
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.7206176705829481
+      ],
+      [
+        -0.1,
+        -2.5
+      ],
+      [
+        1.4000000000000001,
+        -2.5
+      ],
+      [
+        2.25,
+        -2.1
+      ]
+    ]
+  },
+  {
+    "seed": 102,
+    "method": "smooth",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 2,
+      "confidence": 0.9527428264147423,
+      "rgb": [
+        0.4627450980392157,
+        0.6235294117647059,
+        1.0
+      ],
+      "saturation": 0.5372549019607843,
+      "accepted": true
+    },
+    "true_label": 2,
+    "sim_time": 9.74,
+    "path_m": 4.817486777717179,
+    "accel_rms_m_s2": 0.28540184151040643,
+    "jerk_rms_m_s3": 0.8491586694752503,
+    "command_accel_max": 0.550000000000001,
+    "final_xy": [
+      2.3275955479213275,
+      -2.057295935811655
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.7206176705829481
+      ],
+      [
+        -0.1,
+        -2.5
+      ],
+      [
+        1.4000000000000001,
+        -2.5
+      ],
+      [
+        2.25,
+        -2.1
+      ]
+    ]
+  },
+  {
+    "seed": 103,
+    "method": "direct",
+    "success": false,
+    "goal_reached": false,
+    "collision": true,
+    "reason": "collision",
+    "perception": {
+      "label": 0,
+      "confidence": 0.9681106708314013,
+      "rgb": [
+        1.0,
+        0.4823529411764706,
+        0.4549019607843137
+      ],
+      "saturation": 0.5450980392156863,
+      "accepted": true
+    },
+    "true_label": 0,
+    "sim_time": 2.33,
+    "path_m": 1.223921892349938,
+    "accel_rms_m_s2": 0.5424877060496778,
+    "jerk_rms_m_s3": 1.8852819737760522,
+    "command_accel_max": 2.482534153247273e-15,
+    "final_xy": [
+      -1.3483893345143632,
+      -1.2672439958797912
+    ],
+    "route": [
+      [
+        -2.25,
+        -2.112091605862744
+      ],
+      [
+        2.25,
+        2.1
+      ]
+    ]
+  },
+  {
+    "seed": 103,
+    "method": "astar",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 0,
+      "confidence": 0.9681106708314013,
+      "rgb": [
+        1.0,
+        0.4823529411764706,
+        0.4549019607843137
+      ],
+      "saturation": 0.5450980392156863,
+      "accepted": true
+    },
+    "true_label": 0,
+    "sim_time": 12.87,
+    "path_m": 7.006557305603495,
+    "accel_rms_m_s2": 0.38046370466743523,
+    "jerk_rms_m_s3": 3.2914694804457847,
+    "command_accel_max": 10.054185140318156,
+    "final_xy": [
+      2.249692519201243,
+      2.0999754355288247
+    ],
+    "route": [
+      [
+        -2.25,
+        -2.112091605862744
+      ],
+      [
+        -1.5,
+        0.2
+      ],
+      [
+        -0.2,
+        1.9000000000000001
+      ],
+      [
+        2.25,
+        2.1
+      ]
+    ]
+  },
+  {
+    "seed": 103,
+    "method": "smooth",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 0,
+      "confidence": 0.9681106708314013,
+      "rgb": [
+        1.0,
+        0.4823529411764706,
+        0.4549019607843137
+      ],
+      "saturation": 0.5450980392156863,
+      "accepted": true
+    },
+    "true_label": 0,
+    "sim_time": 13.75,
+    "path_m": 7.145244361665249,
+    "accel_rms_m_s2": 0.2522392699621257,
+    "jerk_rms_m_s3": 0.6759327294129611,
+    "command_accel_max": 0.550000000000001,
+    "final_xy": [
+      2.3449535100092804,
+      2.1026747919596125
+    ],
+    "route": [
+      [
+        -2.25,
+        -2.112091605862744
+      ],
+      [
+        -1.5,
+        0.2
+      ],
+      [
+        -0.2,
+        1.9000000000000001
+      ],
+      [
+        2.25,
+        2.1
+      ]
+    ]
+  },
+  {
+    "seed": 104,
+    "method": "direct",
+    "success": false,
+    "goal_reached": false,
+    "collision": true,
+    "reason": "collision",
+    "perception": {
+      "label": 1,
+      "confidence": 0.9573042178401014,
+      "rgb": [
+        0.4980392156862745,
+        1.0,
+        0.5607843137254902
+      ],
+      "saturation": 0.5019607843137255,
+      "accepted": true
+    },
+    "true_label": 1,
+    "sim_time": 2.17,
+    "path_m": 1.1504903756493614,
+    "accel_rms_m_s2": 0.5926220755889212,
+    "jerk_rms_m_s3": 2.276653059907602,
+    "command_accel_max": 4.47545209131181e-15,
+    "final_xy": [
+      -1.1786090907518378,
+      -1.3881085997113125
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.8221278249870108
+      ],
+      [
+        2.25,
+        0.0
+      ]
+    ]
+  },
+  {
+    "seed": 104,
+    "method": "astar",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 1,
+      "confidence": 0.9573042178401014,
+      "rgb": [
+        0.4980392156862745,
+        1.0,
+        0.5607843137254902
+      ],
+      "saturation": 0.5019607843137255,
+      "accepted": true
+    },
+    "true_label": 1,
+    "sim_time": 11.64,
+    "path_m": 6.267950751547852,
+    "accel_rms_m_s2": 0.4438944209231307,
+    "jerk_rms_m_s3": 4.026631425705216,
+    "command_accel_max": 11.164898661923539,
+    "final_xy": [
+      2.2463996055138082,
+      -0.009352261890212514
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.8221278249870108
+      ],
+      [
+        0.0,
+        -2.5
+      ],
+      [
+        1.3,
+        -2.5
+      ],
+      [
+        2.25,
+        0.0
+      ]
+    ]
+  },
+  {
+    "seed": 104,
+    "method": "smooth",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 1,
+      "confidence": 0.9573042178401014,
+      "rgb": [
+        0.4980392156862745,
+        1.0,
+        0.5607843137254902
+      ],
+      "saturation": 0.5019607843137255,
+      "accepted": true
+    },
+    "true_label": 1,
+    "sim_time": 12.67,
+    "path_m": 6.452726128157894,
+    "accel_rms_m_s2": 0.28113783464002756,
+    "jerk_rms_m_s3": 0.7392036443781808,
+    "command_accel_max": 0.5500000000000008,
+    "final_xy": [
+      2.273503575234137,
+      0.07642966872443173
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.8221278249870108
+      ],
+      [
+        0.0,
+        -2.5
+      ],
+      [
+        1.3,
+        -2.5
+      ],
+      [
+        2.25,
+        0.0
+      ]
+    ]
+  },
+  {
+    "seed": 105,
+    "method": "direct",
+    "success": false,
+    "goal_reached": false,
+    "collision": true,
+    "reason": "collision",
+    "perception": {
+      "label": 2,
+      "confidence": 0.9454806021651003,
+      "rgb": [
+        0.4549019607843137,
+        0.6470588235294118,
+        1.0
+      ],
+      "saturation": 0.5450980392156863,
+      "accepted": true
+    },
+    "true_label": 2,
+    "sim_time": 3.96,
+    "path_m": 2.2219678306282944,
+    "accel_rms_m_s2": 0.4248098889777124,
+    "jerk_rms_m_s3": 1.540548292877193,
+    "command_accel_max": 4.6959448317919846e-15,
+    "final_xy": [
+      -0.03709867538663426,
+      -1.9099500139797345
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.7258102648089912
+      ],
+      [
+        2.25,
+        -2.1
+      ]
+    ]
+  },
+  {
+    "seed": 105,
+    "method": "astar",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 2,
+      "confidence": 0.9454806021651003,
+      "rgb": [
+        0.4549019607843137,
+        0.6470588235294118,
+        1.0
+      ],
+      "saturation": 0.5450980392156863,
+      "accepted": true
+    },
+    "true_label": 2,
+    "sim_time": 9.14,
+    "path_m": 4.775603931018028,
+    "accel_rms_m_s2": 0.4480756707670433,
+    "jerk_rms_m_s3": 4.010647554479451,
+    "command_accel_max": 9.460551141454633,
+    "final_xy": [
+      2.2452222544691685,
+      -2.102686884573764
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.7258102648089912
+      ],
+      [
+        -0.1,
+        -2.6
+      ],
+      [
+        1.3,
+        -2.6
+      ],
+      [
+        2.25,
+        -2.1
+      ]
+    ]
+  },
+  {
+    "seed": 105,
+    "method": "smooth",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 2,
+      "confidence": 0.9454806021651003,
+      "rgb": [
+        0.4549019607843137,
+        0.6470588235294118,
+        1.0
+      ],
+      "saturation": 0.5450980392156863,
+      "accepted": true
+    },
+    "true_label": 2,
+    "sim_time": 9.84,
+    "path_m": 4.875783745364213,
+    "accel_rms_m_s2": 0.28721620797814384,
+    "jerk_rms_m_s3": 0.8476176519427324,
+    "command_accel_max": 0.550000000000001,
+    "final_xy": [
+      2.315898578381511,
+      -2.0597591746098884
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.7258102648089912
+      ],
+      [
+        -0.1,
+        -2.6
+      ],
+      [
+        1.3,
+        -2.6
+      ],
+      [
+        2.25,
+        -2.1
+      ]
+    ]
+  },
+  {
+    "seed": 106,
+    "method": "direct",
+    "success": false,
+    "goal_reached": false,
+    "collision": true,
+    "reason": "collision",
+    "perception": {
+      "label": 0,
+      "confidence": 0.9736548697609649,
+      "rgb": [
+        1.0,
+        0.47843137254901963,
+        0.4196078431372549
+      ],
+      "saturation": 0.580392156862745,
+      "accepted": true
+    },
+    "true_label": 0,
+    "sim_time": 2.76,
+    "path_m": 1.5252197907050142,
+    "accel_rms_m_s2": 0.5531698612571477,
+    "jerk_rms_m_s3": 2.336770574148007,
+    "command_accel_max": 3.3306690738754696e-15,
+    "final_xy": [
+      -1.134195465799201,
+      -1.0489484188102585
+    ],
+    "route": [
+      [
+        -2.25,
+        -2.0883566321542437
+      ],
+      [
+        2.25,
+        2.1
+      ]
+    ]
+  },
+  {
+    "seed": 106,
+    "method": "astar",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 0,
+      "confidence": 0.9736548697609649,
+      "rgb": [
+        1.0,
+        0.47843137254901963,
+        0.4196078431372549
+      ],
+      "saturation": 0.580392156862745,
+      "accepted": true
+    },
+    "true_label": 0,
+    "sim_time": 12.54,
+    "path_m": 6.8249114839992435,
+    "accel_rms_m_s2": 0.429070480660007,
+    "jerk_rms_m_s3": 4.117765133760642,
+    "command_accel_max": 10.192812317948894,
+    "final_xy": [
+      2.2329070002757048,
+      2.0977646783082187
+    ],
+    "route": [
+      [
+        -2.25,
+        -2.0883566321542437
+      ],
+      [
+        -1.3,
+        0.0
+      ],
+      [
+        -0.2,
+        1.8
+      ],
+      [
+        2.25,
+        2.1
+      ]
+    ]
+  },
+  {
+    "seed": 106,
+    "method": "smooth",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 0,
+      "confidence": 0.9736548697609649,
+      "rgb": [
+        1.0,
+        0.47843137254901963,
+        0.4196078431372549
+      ],
+      "saturation": 0.580392156862745,
+      "accepted": true
+    },
+    "true_label": 0,
+    "sim_time": 13.4,
+    "path_m": 6.9477909455899365,
+    "accel_rms_m_s2": 0.26765199157963054,
+    "jerk_rms_m_s3": 0.7921140423075979,
+    "command_accel_max": 0.5500000000000008,
+    "final_xy": [
+      2.3088090561561425,
+      2.104364408720262
+    ],
+    "route": [
+      [
+        -2.25,
+        -2.0883566321542437
+      ],
+      [
+        -1.3,
+        0.0
+      ],
+      [
+        -0.2,
+        1.8
+      ],
+      [
+        2.25,
+        2.1
+      ]
+    ]
+  },
+  {
+    "seed": 107,
+    "method": "direct",
+    "success": false,
+    "goal_reached": false,
+    "collision": true,
+    "reason": "collision",
+    "perception": {
+      "label": 1,
+      "confidence": 0.9717706184609549,
+      "rgb": [
+        0.47843137254901963,
+        1.0,
+        0.5137254901960784
+      ],
+      "saturation": 0.5215686274509803,
+      "accepted": true
+    },
+    "true_label": 1,
+    "sim_time": 2.22,
+    "path_m": 1.142149062472035,
+    "accel_rms_m_s2": 0.5202574347416704,
+    "jerk_rms_m_s3": 1.6080055980291725,
+    "command_accel_max": 2.482534153247273e-15,
+    "final_xy": [
+      -1.2044457895712097,
+      -1.5584316866839638
+    ],
+    "route": [
+      [
+        -2.25,
+        -2.0298577833516847
+      ],
+      [
+        2.25,
+        0.0
+      ]
+    ]
+  },
+  {
+    "seed": 107,
+    "method": "astar",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 1,
+      "confidence": 0.9717706184609549,
+      "rgb": [
+        0.47843137254901963,
+        1.0,
+        0.5137254901960784
+      ],
+      "saturation": 0.5215686274509803,
+      "accepted": true
+    },
+    "true_label": 1,
+    "sim_time": 11.83,
+    "path_m": 6.366580688303662,
+    "accel_rms_m_s2": 0.3911603526087795,
+    "jerk_rms_m_s3": 3.1251672945223006,
+    "command_accel_max": 11.161326433710768,
+    "final_xy": [
+      2.2538213020100333,
+      0.010710021666463983
+    ],
+    "route": [
+      [
+        -2.25,
+        -2.0298577833516847
+      ],
+      [
+        -0.1,
+        -2.6
+      ],
+      [
+        1.3,
+        -2.6
+      ],
+      [
+        2.25,
+        0.0
+      ]
+    ]
+  },
+  {
+    "seed": 107,
+    "method": "smooth",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 1,
+      "confidence": 0.9717706184609549,
+      "rgb": [
+        0.47843137254901963,
+        1.0,
+        0.5137254901960784
+      ],
+      "saturation": 0.5215686274509803,
+      "accepted": true
+    },
+    "true_label": 1,
+    "sim_time": 12.93,
+    "path_m": 6.567136027167224,
+    "accel_rms_m_s2": 0.26554803387943154,
+    "jerk_rms_m_s3": 0.6320661217096814,
+    "command_accel_max": 0.550000000000001,
+    "final_xy": [
+      2.2784392911830675,
+      0.10237127650496632
+    ],
+    "route": [
+      [
+        -2.25,
+        -2.0298577833516847
+      ],
+      [
+        -0.1,
+        -2.6
+      ],
+      [
+        1.3,
+        -2.6
+      ],
+      [
+        2.25,
+        0.0
+      ]
+    ]
+  },
+  {
+    "seed": 108,
+    "method": "direct",
+    "success": false,
+    "goal_reached": false,
+    "collision": true,
+    "reason": "collision",
+    "perception": {
+      "label": 2,
+      "confidence": 0.9479185401655782,
+      "rgb": [
+        0.4666666666666667,
+        0.6352941176470588,
+        1.0
+      ],
+      "saturation": 0.5333333333333333,
+      "accepted": true
+    },
+    "true_label": 2,
+    "sim_time": 3.91,
+    "path_m": 2.16841357101339,
+    "accel_rms_m_s2": 0.3977973539523883,
+    "jerk_rms_m_s3": 1.2643402003182391,
+    "command_accel_max": 3.316363021242753e-15,
+    "final_xy": [
+      -0.08374806351170352,
+      -2.043144742121507
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.9902925385540775
+      ],
+      [
+        2.25,
+        -2.1
+      ]
+    ]
+  },
+  {
+    "seed": 108,
+    "method": "astar",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 2,
+      "confidence": 0.9479185401655782,
+      "rgb": [
+        0.4666666666666667,
+        0.6352941176470588,
+        1.0
+      ],
+      "saturation": 0.5333333333333333,
+      "accepted": true
+    },
+    "true_label": 2,
+    "sim_time": 9.02,
+    "path_m": 4.701784905270255,
+    "accel_rms_m_s2": 0.41204710661992144,
+    "jerk_rms_m_s3": 3.447323694097163,
+    "command_accel_max": 9.419745139990232,
+    "final_xy": [
+      2.2567994871791544,
+      -2.0968747521132953
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.9902925385540775
+      ],
+      [
+        -0.2,
+        -2.6
+      ],
+      [
+        1.2000000000000002,
+        -2.6
+      ],
+      [
+        2.25,
+        -2.1
+      ]
+    ]
+  },
+  {
+    "seed": 108,
+    "method": "smooth",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 2,
+      "confidence": 0.9479185401655782,
+      "rgb": [
+        0.4666666666666667,
+        0.6352941176470588,
+        1.0
+      ],
+      "saturation": 0.5333333333333333,
+      "accepted": true
+    },
+    "true_label": 2,
+    "sim_time": 9.77,
+    "path_m": 4.803199431043948,
+    "accel_rms_m_s2": 0.27725046816193977,
+    "jerk_rms_m_s3": 0.778951644083695,
+    "command_accel_max": 0.5500000000000009,
+    "final_xy": [
+      2.332655136678043,
+      -2.0537098078874596
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.9902925385540775
+      ],
+      [
+        -0.2,
+        -2.6
+      ],
+      [
+        1.2000000000000002,
+        -2.6
+      ],
+      [
+        2.25,
+        -2.1
+      ]
+    ]
+  },
+  {
+    "seed": 109,
+    "method": "direct",
+    "success": false,
+    "goal_reached": false,
+    "collision": true,
+    "reason": "collision",
+    "perception": {
+      "label": 0,
+      "confidence": 0.9663948552099989,
+      "rgb": [
+        1.0,
+        0.5019607843137255,
+        0.4392156862745098
+      ],
+      "saturation": 0.5607843137254902,
+      "accepted": true
+    },
+    "true_label": 0,
+    "sim_time": 2.5,
+    "path_m": 1.3244149303795232,
+    "accel_rms_m_s2": 0.5437809226751188,
+    "jerk_rms_m_s3": 2.0091194494489577,
+    "command_accel_max": 3.510833468576701e-15,
+    "final_xy": [
+      -1.2755938427421174,
+      -1.2694654161325838
+    ],
+    "route": [
+      [
+        -2.25,
+        -2.201562123293354
+      ],
+      [
+        2.25,
+        2.1
+      ]
+    ]
+  },
+  {
+    "seed": 109,
+    "method": "astar",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 0,
+      "confidence": 0.9663948552099989,
+      "rgb": [
+        1.0,
+        0.5019607843137255,
+        0.4392156862745098
+      ],
+      "saturation": 0.5607843137254902,
+      "accepted": true
+    },
+    "true_label": 0,
+    "sim_time": 12.71,
+    "path_m": 6.910853878507083,
+    "accel_rms_m_s2": 0.39104558098306597,
+    "jerk_rms_m_s3": 3.5132097010703913,
+    "command_accel_max": 9.6510885493581,
+    "final_xy": [
+      2.243784399454332,
+      2.09889316257325
+    ],
+    "route": [
+      [
+        -2.25,
+        -2.201562123293354
+      ],
+      [
+        -1.4000000000000001,
+        0.4
+      ],
+      [
+        0.0,
+        1.7000000000000002
+      ],
+      [
+        2.25,
+        2.1
+      ]
+    ]
+  },
+  {
+    "seed": 109,
+    "method": "smooth",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 0,
+      "confidence": 0.9663948552099989,
+      "rgb": [
+        1.0,
+        0.5019607843137255,
+        0.4392156862745098
+      ],
+      "saturation": 0.5607843137254902,
+      "accepted": true
+    },
+    "true_label": 0,
+    "sim_time": 13.48,
+    "path_m": 7.019094042674971,
+    "accel_rms_m_s2": 0.2545649775209274,
+    "jerk_rms_m_s3": 0.7244985657474496,
+    "command_accel_max": 0.5500000000000007,
+    "final_xy": [
+      2.3246453773322315,
+      2.110839417056841
+    ],
+    "route": [
+      [
+        -2.25,
+        -2.201562123293354
+      ],
+      [
+        -1.4000000000000001,
+        0.4
+      ],
+      [
+        0.0,
+        1.7000000000000002
+      ],
+      [
+        2.25,
+        2.1
+      ]
+    ]
+  },
+  {
+    "seed": 110,
+    "method": "direct",
+    "success": false,
+    "goal_reached": false,
+    "collision": true,
+    "reason": "collision",
+    "perception": {
+      "label": 1,
+      "confidence": 0.9756344756462751,
+      "rgb": [
+        0.4549019607843137,
+        1.0,
+        0.5098039215686274
+      ],
+      "saturation": 0.5450980392156863,
+      "accepted": true
+    },
+    "true_label": 1,
+    "sim_time": 2.58,
+    "path_m": 1.3711706888828,
+    "accel_rms_m_s2": 0.5108585913168284,
+    "jerk_rms_m_s3": 1.7461300102881419,
+    "command_accel_max": 4.440892098500626e-15,
+    "final_xy": [
+      -1.0133772136689578,
+      -1.6359933584198851
+    ],
+    "route": [
+      [
+        -2.25,
+        -2.2552795414521047
+      ],
+      [
+        2.25,
+        0.0
+      ]
+    ]
+  },
+  {
+    "seed": 110,
+    "method": "astar",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 1,
+      "confidence": 0.9756344756462751,
+      "rgb": [
+        0.4549019607843137,
+        1.0,
+        0.5098039215686274
+      ],
+      "saturation": 0.5450980392156863,
+      "accepted": true
+    },
+    "true_label": 1,
+    "sim_time": 11.45,
+    "path_m": 6.131965500300207,
+    "accel_rms_m_s2": 0.40890014130461666,
+    "jerk_rms_m_s3": 3.5574028630697665,
+    "command_accel_max": 11.007823793914852,
+    "final_xy": [
+      2.250331824106718,
+      0.0007891679491935868
+    ],
+    "route": [
+      [
+        -2.25,
+        -2.2552795414521047
+      ],
+      [
+        0.8,
+        -2.5
+      ],
+      [
+        1.2000000000000002,
+        -2.5
+      ],
+      [
+        2.25,
+        0.0
+      ]
+    ]
+  },
+  {
+    "seed": 110,
+    "method": "smooth",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 1,
+      "confidence": 0.9756344756462751,
+      "rgb": [
+        0.4549019607843137,
+        1.0,
+        0.5098039215686274
+      ],
+      "saturation": 0.5450980392156863,
+      "accepted": true
+    },
+    "true_label": 1,
+    "sim_time": 12.51,
+    "path_m": 6.295932778402502,
+    "accel_rms_m_s2": 0.262135266594117,
+    "jerk_rms_m_s3": 0.7211581784695758,
+    "command_accel_max": 0.5500000000000012,
+    "final_xy": [
+      2.282862637914286,
+      0.09008199146289281
+    ],
+    "route": [
+      [
+        -2.25,
+        -2.2552795414521047
+      ],
+      [
+        0.8,
+        -2.5
+      ],
+      [
+        1.2000000000000002,
+        -2.5
+      ],
+      [
+        2.25,
+        0.0
+      ]
+    ]
+  },
+  {
+    "seed": 111,
+    "method": "direct",
+    "success": false,
+    "goal_reached": false,
+    "collision": true,
+    "reason": "collision",
+    "perception": {
+      "label": 2,
+      "confidence": 0.9634979673006773,
+      "rgb": [
+        0.4392156862745098,
+        0.6,
+        1.0
+      ],
+      "saturation": 0.5607843137254902,
+      "accepted": true
+    },
+    "true_label": 2,
+    "sim_time": 4.19,
+    "path_m": 2.3134171073015533,
+    "accel_rms_m_s2": 0.38025162760206416,
+    "jerk_rms_m_s3": 1.1772151686598642,
+    "command_accel_max": 4.545902364027964e-15,
+    "final_xy": [
+      0.07418663223164959,
+      -1.9461402227365596
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.7815622578625976
+      ],
+      [
+        2.25,
+        -2.1
+      ]
+    ]
+  },
+  {
+    "seed": 111,
+    "method": "astar",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 2,
+      "confidence": 0.9634979673006773,
+      "rgb": [
+        0.4392156862745098,
+        0.6,
+        1.0
+      ],
+      "saturation": 0.5607843137254902,
+      "accepted": true
+    },
+    "true_label": 2,
+    "sim_time": 9.14,
+    "path_m": 4.7778922667654555,
+    "accel_rms_m_s2": 0.40524576929897904,
+    "jerk_rms_m_s3": 3.326366905737848,
+    "command_accel_max": 9.115702019610614,
+    "final_xy": [
+      2.258753361189127,
+      -2.095422824257518
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.7815622578625976
+      ],
+      [
+        0.0,
+        -2.6
+      ],
+      [
+        1.4000000000000001,
+        -2.6
+      ],
+      [
+        2.25,
+        -2.1
+      ]
+    ]
+  },
+  {
+    "seed": 111,
+    "method": "smooth",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 2,
+      "confidence": 0.9634979673006773,
+      "rgb": [
+        0.4392156862745098,
+        0.6,
+        1.0
+      ],
+      "saturation": 0.5607843137254902,
+      "accepted": true
+    },
+    "true_label": 2,
+    "sim_time": 9.97,
+    "path_m": 4.897513042696426,
+    "accel_rms_m_s2": 0.2784432609350513,
+    "jerk_rms_m_s3": 0.7550083342673255,
+    "command_accel_max": 0.550000000000001,
+    "final_xy": [
+      2.3353512417173232,
+      -2.0383388736857233
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.7815622578625976
+      ],
+      [
+        0.0,
+        -2.6
+      ],
+      [
+        1.4000000000000001,
+        -2.6
+      ],
+      [
+        2.25,
+        -2.1
+      ]
+    ]
+  },
+  {
+    "seed": 112,
+    "method": "direct",
+    "success": false,
+    "goal_reached": false,
+    "collision": true,
+    "reason": "collision",
+    "perception": {
+      "label": 0,
+      "confidence": 0.9756787121455284,
+      "rgb": [
+        1.0,
+        0.4470588235294118,
+        0.44313725490196076
+      ],
+      "saturation": 0.5568627450980392,
+      "accepted": true
+    },
+    "true_label": 0,
+    "sim_time": 2.07,
+    "path_m": 1.100552062669087,
+    "accel_rms_m_s2": 0.6293671542370753,
+    "jerk_rms_m_s3": 2.583131185620562,
+    "command_accel_max": 2.482534153247273e-15,
+    "final_xy": [
+      -1.4110478384200362,
+      -1.041458729872965
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.7623857713805522
+      ],
+      [
+        2.25,
+        2.1
+      ]
+    ]
+  },
+  {
+    "seed": 112,
+    "method": "astar",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 0,
+      "confidence": 0.9756787121455284,
+      "rgb": [
+        1.0,
+        0.4470588235294118,
+        0.44313725490196076
+      ],
+      "saturation": 0.5568627450980392,
+      "accepted": true
+    },
+    "true_label": 0,
+    "sim_time": 11.98,
+    "path_m": 6.494268367761517,
+    "accel_rms_m_s2": 0.4219578326375254,
+    "jerk_rms_m_s3": 3.983181050137554,
+    "command_accel_max": 9.380294291643068,
+    "final_xy": [
+      2.2356740450436523,
+      2.0967656344615593
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.7623857713805522
+      ],
+      [
+        -1.6,
+        0.30000000000000004
+      ],
+      [
+        0.0,
+        1.6
+      ],
+      [
+        2.25,
+        2.1
+      ]
+    ]
+  },
+  {
+    "seed": 112,
+    "method": "smooth",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 0,
+      "confidence": 0.9756787121455284,
+      "rgb": [
+        1.0,
+        0.4470588235294118,
+        0.44313725490196076
+      ],
+      "saturation": 0.5568627450980392,
+      "accepted": true
+    },
+    "true_label": 0,
+    "sim_time": 12.76,
+    "path_m": 6.606922749275618,
+    "accel_rms_m_s2": 0.26747560506690976,
+    "jerk_rms_m_s3": 0.7973221224097243,
+    "command_accel_max": 0.5500000000000007,
+    "final_xy": [
+      2.31675823432249,
+      2.113404818057385
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.7623857713805522
+      ],
+      [
+        -1.6,
+        0.30000000000000004
+      ],
+      [
+        0.0,
+        1.6
+      ],
+      [
+        2.25,
+        2.1
+      ]
+    ]
+  },
+  {
+    "seed": 113,
+    "method": "direct",
+    "success": false,
+    "goal_reached": false,
+    "collision": true,
+    "reason": "collision",
+    "perception": {
+      "label": 1,
+      "confidence": 0.9688705000284473,
+      "rgb": [
+        0.47058823529411764,
+        1.0,
+        0.5333333333333333
+      ],
+      "saturation": 0.5294117647058824,
+      "accepted": true
+    },
+    "true_label": 1,
+    "sim_time": 1.73,
+    "path_m": 0.8966745341849118,
+    "accel_rms_m_s2": 0.7074564175806723,
+    "jerk_rms_m_s3": 3.035632959732264,
+    "command_accel_max": 3.1401849173675502e-15,
+    "final_xy": [
+      -1.418717665955024,
+      -1.6117496773851878
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.9771258255298125
+      ],
+      [
+        2.25,
+        0.0
+      ]
+    ]
+  },
+  {
+    "seed": 113,
+    "method": "astar",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 1,
+      "confidence": 0.9688705000284473,
+      "rgb": [
+        0.47058823529411764,
+        1.0,
+        0.5333333333333333
+      ],
+      "saturation": 0.5294117647058824,
+      "accepted": true
+    },
+    "true_label": 1,
+    "sim_time": 11.36,
+    "path_m": 6.112124046899887,
+    "accel_rms_m_s2": 0.4715954640139194,
+    "jerk_rms_m_s3": 4.5347676246948065,
+    "command_accel_max": 11.136051564982905,
+    "final_xy": [
+      2.243191216559183,
+      -0.01674890679384666
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.9771258255298125
+      ],
+      [
+        -0.2,
+        -2.4000000000000004
+      ],
+      [
+        1.3,
+        -2.4000000000000004
+      ],
+      [
+        2.25,
+        0.0
+      ]
+    ]
+  },
+  {
+    "seed": 113,
+    "method": "smooth",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 1,
+      "confidence": 0.9688705000284473,
+      "rgb": [
+        0.47058823529411764,
+        1.0,
+        0.5333333333333333
+      ],
+      "saturation": 0.5294117647058824,
+      "accepted": true
+    },
+    "true_label": 1,
+    "sim_time": 12.32,
+    "path_m": 6.279338909505052,
+    "accel_rms_m_s2": 0.28876345603196657,
+    "jerk_rms_m_s3": 0.7984155059853569,
+    "command_accel_max": 0.5500000000000008,
+    "final_xy": [
+      2.269109231178627,
+      0.059213833031187074
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.9771258255298125
+      ],
+      [
+        -0.2,
+        -2.4000000000000004
+      ],
+      [
+        1.3,
+        -2.4000000000000004
+      ],
+      [
+        2.25,
+        0.0
+      ]
+    ]
+  },
+  {
+    "seed": 114,
+    "method": "direct",
+    "success": false,
+    "goal_reached": false,
+    "collision": true,
+    "reason": "collision",
+    "perception": {
+      "label": 2,
+      "confidence": 0.9520771418172297,
+      "rgb": [
+        0.4588235294117647,
+        0.6274509803921569,
+        1.0
+      ],
+      "saturation": 0.5411764705882354,
+      "accepted": true
+    },
+    "true_label": 2,
+    "sim_time": 4.05,
+    "path_m": 2.253772885959059,
+    "accel_rms_m_s2": 0.4246757190351777,
+    "jerk_rms_m_s3": 1.5567608305903635,
+    "command_accel_max": 3.851086116668512e-15,
+    "final_xy": [
+      0.0260899182175674,
+      -2.059155310737497
+    ],
+    "route": [
+      [
+        -2.25,
+        -2.017298897795353
+      ],
+      [
+        2.25,
+        -2.1
+      ]
+    ]
+  },
+  {
+    "seed": 114,
+    "method": "astar",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 2,
+      "confidence": 0.9520771418172297,
+      "rgb": [
+        0.4588235294117647,
+        0.6274509803921569,
+        1.0
+      ],
+      "saturation": 0.5411764705882354,
+      "accepted": true
+    },
+    "true_label": 2,
+    "sim_time": 8.87,
+    "path_m": 4.62679567435607,
+    "accel_rms_m_s2": 0.44882340099722207,
+    "jerk_rms_m_s3": 4.036567341090555,
+    "command_accel_max": 9.34624175055772,
+    "final_xy": [
+      2.244655968343776,
+      -2.102792907333263
+    ],
+    "route": [
+      [
+        -2.25,
+        -2.017298897795353
+      ],
+      [
+        0.0,
+        -2.5
+      ],
+      [
+        1.4000000000000001,
+        -2.5
+      ],
+      [
+        2.25,
+        -2.1
+      ]
+    ]
+  },
+  {
+    "seed": 114,
+    "method": "smooth",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 2,
+      "confidence": 0.9520771418172297,
+      "rgb": [
+        0.4588235294117647,
+        0.6274509803921569,
+        1.0
+      ],
+      "saturation": 0.5411764705882354,
+      "accepted": true
+    },
+    "true_label": 2,
+    "sim_time": 9.62,
+    "path_m": 4.72771534587312,
+    "accel_rms_m_s2": 0.29029914847340343,
+    "jerk_rms_m_s3": 0.8734637124598686,
+    "command_accel_max": 0.5500000000000012,
+    "final_xy": [
+      2.322656517054878,
+      -2.0595489189240017
+    ],
+    "route": [
+      [
+        -2.25,
+        -2.017298897795353
+      ],
+      [
+        0.0,
+        -2.5
+      ],
+      [
+        1.4000000000000001,
+        -2.5
+      ],
+      [
+        2.25,
+        -2.1
+      ]
+    ]
+  },
+  {
+    "seed": 115,
+    "method": "direct",
+    "success": false,
+    "goal_reached": false,
+    "collision": true,
+    "reason": "collision",
+    "perception": {
+      "label": 0,
+      "confidence": 0.9780590915426761,
+      "rgb": [
+        1.0,
+        0.45098039215686275,
+        0.4196078431372549
+      ],
+      "saturation": 0.580392156862745,
+      "accepted": true
+    },
+    "true_label": 0,
+    "sim_time": 2.53,
+    "path_m": 1.3606877749771704,
+    "accel_rms_m_s2": 0.5499776824941567,
+    "jerk_rms_m_s3": 2.1121127163122013,
+    "command_accel_max": 2.482534153247273e-15,
+    "final_xy": [
+      -1.2239068531482393,
+      -0.9819735525508836
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.8933347638799407
+      ],
+      [
+        2.25,
+        2.1
+      ]
+    ]
+  },
+  {
+    "seed": 115,
+    "method": "astar",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 0,
+      "confidence": 0.9780590915426761,
+      "rgb": [
+        1.0,
+        0.45098039215686275,
+        0.4196078431372549
+      ],
+      "saturation": 0.580392156862745,
+      "accepted": true
+    },
+    "true_label": 0,
+    "sim_time": 12.38,
+    "path_m": 6.723886249597067,
+    "accel_rms_m_s2": 0.40785912868505947,
+    "jerk_rms_m_s3": 3.7218097765820137,
+    "command_accel_max": 10.021139740634794,
+    "final_xy": [
+      2.2407040406559395,
+      2.0991739839594983
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.8933347638799407
+      ],
+      [
+        -1.4000000000000001,
+        0.2
+      ],
+      [
+        -0.1,
+        1.9000000000000001
+      ],
+      [
+        2.25,
+        2.1
+      ]
+    ]
+  },
+  {
+    "seed": 115,
+    "method": "smooth",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 0,
+      "confidence": 0.9780590915426761,
+      "rgb": [
+        1.0,
+        0.45098039215686275,
+        0.4196078431372549
+      ],
+      "saturation": 0.580392156862745,
+      "accepted": true
+    },
+    "true_label": 0,
+    "sim_time": 13.23,
+    "path_m": 6.848150232967992,
+    "accel_rms_m_s2": 0.2629824639082466,
+    "jerk_rms_m_s3": 0.745507289239923,
+    "command_accel_max": 0.5500000000000008,
+    "final_xy": [
+      2.3212792480548203,
+      2.102502855240132
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.8933347638799407
+      ],
+      [
+        -1.4000000000000001,
+        0.2
+      ],
+      [
+        -0.1,
+        1.9000000000000001
+      ],
+      [
+        2.25,
+        2.1
+      ]
+    ]
+  },
+  {
+    "seed": 116,
+    "method": "direct",
+    "success": false,
+    "goal_reached": false,
+    "collision": true,
+    "reason": "collision",
+    "perception": {
+      "label": 1,
+      "confidence": 0.9721308141000445,
+      "rgb": [
+        0.47058823529411764,
+        1.0,
+        0.5176470588235295
+      ],
+      "saturation": 0.5294117647058824,
+      "accepted": true
+    },
+    "true_label": 1,
+    "sim_time": 2.55,
+    "path_m": 1.3515359490656782,
+    "accel_rms_m_s2": 0.5332077548168154,
+    "jerk_rms_m_s3": 1.935785496362364,
+    "command_accel_max": 2.482534153247273e-15,
+    "final_xy": [
+      -1.002767369936291,
+      -1.523714386043651
+    ],
+    "route": [
+      [
+        -2.25,
+        -2.1048939356080627
+      ],
+      [
+        2.25,
+        0.0
+      ]
+    ]
+  },
+  {
+    "seed": 116,
+    "method": "astar",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 1,
+      "confidence": 0.9721308141000445,
+      "rgb": [
+        0.47058823529411764,
+        1.0,
+        0.5176470588235295
+      ],
+      "saturation": 0.5294117647058824,
+      "accepted": true
+    },
+    "true_label": 1,
+    "sim_time": 11.56,
+    "path_m": 6.214983964714152,
+    "accel_rms_m_s2": 0.4313054986959115,
+    "jerk_rms_m_s3": 3.7966210354200474,
+    "command_accel_max": 11.164891205949692,
+    "final_xy": [
+      2.24826740764556,
+      -0.004541606359383039
+    ],
+    "route": [
+      [
+        -2.25,
+        -2.1048939356080627
+      ],
+      [
+        0.0,
+        -2.5
+      ],
+      [
+        1.3,
+        -2.5
+      ],
+      [
+        2.25,
+        0.0
+      ]
+    ]
+  },
+  {
+    "seed": 116,
+    "method": "smooth",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 1,
+      "confidence": 0.9721308141000445,
+      "rgb": [
+        0.47058823529411764,
+        1.0,
+        0.5176470588235295
+      ],
+      "saturation": 0.5294117647058824,
+      "accepted": true
+    },
+    "true_label": 1,
+    "sim_time": 12.54,
+    "path_m": 6.39043024892457,
+    "accel_rms_m_s2": 0.27603722634122646,
+    "jerk_rms_m_s3": 0.7152415303999432,
+    "command_accel_max": 0.5500000000000008,
+    "final_xy": [
+      2.2722483744460535,
+      0.07456877135863721
+    ],
+    "route": [
+      [
+        -2.25,
+        -2.1048939356080627
+      ],
+      [
+        0.0,
+        -2.5
+      ],
+      [
+        1.3,
+        -2.5
+      ],
+      [
+        2.25,
+        0.0
+      ]
+    ]
+  },
+  {
+    "seed": 117,
+    "method": "direct",
+    "success": false,
+    "goal_reached": false,
+    "collision": true,
+    "reason": "collision",
+    "perception": {
+      "label": 2,
+      "confidence": 0.9454806021651003,
+      "rgb": [
+        0.4549019607843137,
+        0.6470588235294118,
+        1.0
+      ],
+      "saturation": 0.5450980392156863,
+      "accepted": true
+    },
+    "true_label": 2,
+    "sim_time": 3.99,
+    "path_m": 2.2318953901505068,
+    "accel_rms_m_s2": 0.439399325181748,
+    "jerk_rms_m_s3": 1.694122312897406,
+    "command_accel_max": 2.7755575615628914e-15,
+    "final_xy": [
+      -0.004315156875414567,
+      -1.9730013573253367
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.8464005606298477
+      ],
+      [
+        2.25,
+        -2.1
+      ]
+    ]
+  },
+  {
+    "seed": 117,
+    "method": "astar",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 2,
+      "confidence": 0.9454806021651003,
+      "rgb": [
+        0.4549019607843137,
+        0.6470588235294118,
+        1.0
+      ],
+      "saturation": 0.5450980392156863,
+      "accepted": true
+    },
+    "true_label": 2,
+    "sim_time": 9.04,
+    "path_m": 4.722760081033675,
+    "accel_rms_m_s2": 0.4638572982381218,
+    "jerk_rms_m_s3": 4.277572010236279,
+    "command_accel_max": 9.262323133548534,
+    "final_xy": [
+      2.240897528963516,
+      -2.10486024058386
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.8464005606298477
+      ],
+      [
+        0.0,
+        -2.6
+      ],
+      [
+        1.3,
+        -2.6
+      ],
+      [
+        2.25,
+        -2.1
+      ]
+    ]
+  },
+  {
+    "seed": 117,
+    "method": "smooth",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 2,
+      "confidence": 0.9454806021651003,
+      "rgb": [
+        0.4549019607843137,
+        0.6470588235294118,
+        1.0
+      ],
+      "saturation": 0.5450980392156863,
+      "accepted": true
+    },
+    "true_label": 2,
+    "sim_time": 9.78,
+    "path_m": 4.821505789188878,
+    "accel_rms_m_s2": 0.29497954421240313,
+    "jerk_rms_m_s3": 0.8916064742341587,
+    "command_accel_max": 0.5500000000000009,
+    "final_xy": [
+      2.310695025201557,
+      -2.063158625030276
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.8464005606298477
+      ],
+      [
+        0.0,
+        -2.6
+      ],
+      [
+        1.3,
+        -2.6
+      ],
+      [
+        2.25,
+        -2.1
+      ]
+    ]
+  },
+  {
+    "seed": 118,
+    "method": "direct",
+    "success": false,
+    "goal_reached": false,
+    "collision": true,
+    "reason": "collision",
+    "perception": {
+      "label": 0,
+      "confidence": 0.9739968231357006,
+      "rgb": [
+        1.0,
+        0.45098039215686275,
+        0.45098039215686275
+      ],
+      "saturation": 0.5490196078431373,
+      "accepted": true
+    },
+    "true_label": 0,
+    "sim_time": 2.74,
+    "path_m": 1.4461430692268047,
+    "accel_rms_m_s2": 0.47500428102642217,
+    "jerk_rms_m_s3": 1.4961282184435654,
+    "command_accel_max": 4.002966042486721e-15,
+    "final_xy": [
+      -1.1515739502033622,
+      -0.8948923278685329
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.8627803411231458
+      ],
+      [
+        2.25,
+        2.1
+      ]
+    ]
+  },
+  {
+    "seed": 118,
+    "method": "astar",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 0,
+      "confidence": 0.9739968231357006,
+      "rgb": [
+        1.0,
+        0.45098039215686275,
+        0.45098039215686275
+      ],
+      "saturation": 0.5490196078431373,
+      "accepted": true
+    },
+    "true_label": 0,
+    "sim_time": 12.28,
+    "path_m": 6.634671014762985,
+    "accel_rms_m_s2": 0.3639132011840962,
+    "jerk_rms_m_s3": 3.015587408751017,
+    "command_accel_max": 9.930918820455167,
+    "final_xy": [
+      2.2591106130636014,
+      2.1014247846640366
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.8627803411231458
+      ],
+      [
+        -1.3,
+        0.4
+      ],
+      [
+        -0.2,
+        1.7000000000000002
+      ],
+      [
+        2.25,
+        2.1
+      ]
+    ]
+  },
+  {
+    "seed": 118,
+    "method": "smooth",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 0,
+      "confidence": 0.9739968231357006,
+      "rgb": [
+        1.0,
+        0.45098039215686275,
+        0.45098039215686275
+      ],
+      "saturation": 0.5490196078431373,
+      "accepted": true
+    },
+    "true_label": 0,
+    "sim_time": 13.11,
+    "path_m": 6.763726364955192,
+    "accel_rms_m_s2": 0.24927914187125633,
+    "jerk_rms_m_s3": 0.6592818939527183,
+    "command_accel_max": 0.5500000000000006,
+    "final_xy": [
+      2.3542913826040635,
+      2.1119905865366744
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.8627803411231458
+      ],
+      [
+        -1.3,
+        0.4
+      ],
+      [
+        -0.2,
+        1.7000000000000002
+      ],
+      [
+        2.25,
+        2.1
+      ]
+    ]
+  },
+  {
+    "seed": 119,
+    "method": "direct",
+    "success": false,
+    "goal_reached": false,
+    "collision": true,
+    "reason": "collision",
+    "perception": {
+      "label": 1,
+      "confidence": 0.9490394840374554,
+      "rgb": [
+        0.5019607843137255,
+        1.0,
+        0.5843137254901961
+      ],
+      "saturation": 0.4980392156862745,
+      "accepted": true
+    },
+    "true_label": 1,
+    "sim_time": 2.25,
+    "path_m": 1.2068894130464458,
+    "accel_rms_m_s2": 0.6484950774209527,
+    "jerk_rms_m_s3": 2.9878633138710793,
+    "command_accel_max": 2.482534153247273e-15,
+    "final_xy": [
+      -1.1194248138904663,
+      -1.447977108679889
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.9337923486111317
+      ],
+      [
+        2.25,
+        0.0
+      ]
+    ]
+  },
+  {
+    "seed": 119,
+    "method": "astar",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 1,
+      "confidence": 0.9490394840374554,
+      "rgb": [
+        0.5019607843137255,
+        1.0,
+        0.5843137254901961
+      ],
+      "saturation": 0.4980392156862745,
+      "accepted": true
+    },
+    "true_label": 1,
+    "sim_time": 11.85,
+    "path_m": 6.405777120022865,
+    "accel_rms_m_s2": 0.4855610477379054,
+    "jerk_rms_m_s3": 4.865723774667089,
+    "command_accel_max": 11.337818076774644,
+    "final_xy": [
+      2.2425438937863427,
+      -0.02190119337501136
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.9337923486111317
+      ],
+      [
+        -0.1,
+        -2.6
+      ],
+      [
+        1.4000000000000001,
+        -2.6
+      ],
+      [
+        2.25,
+        0.0
+      ]
+    ]
+  },
+  {
+    "seed": 119,
+    "method": "smooth",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 1,
+      "confidence": 0.9490394840374554,
+      "rgb": [
+        0.5019607843137255,
+        1.0,
+        0.5843137254901961
+      ],
+      "saturation": 0.4980392156862745,
+      "accepted": true
+    },
+    "true_label": 1,
+    "sim_time": 12.83,
+    "path_m": 6.585000788110108,
+    "accel_rms_m_s2": 0.2894762135516468,
+    "jerk_rms_m_s3": 0.8146869287981119,
+    "command_accel_max": 0.550000000000001,
+    "final_xy": [
+      2.265009115306213,
+      0.05715563719332536
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.9337923486111317
+      ],
+      [
+        -0.1,
+        -2.6
+      ],
+      [
+        1.4000000000000001,
+        -2.6
+      ],
+      [
+        2.25,
+        0.0
+      ]
+    ]
+  },
+  {
+    "seed": 120,
+    "method": "direct",
+    "success": false,
+    "goal_reached": false,
+    "collision": true,
+    "reason": "collision",
+    "perception": {
+      "label": 2,
+      "confidence": 0.9489749441229354,
+      "rgb": [
+        0.49019607843137253,
+        0.6196078431372549,
+        1.0
+      ],
+      "saturation": 0.5098039215686274,
+      "accepted": true
+    },
+    "true_label": 2,
+    "sim_time": 4.02,
+    "path_m": 2.2631220863930652,
+    "accel_rms_m_s2": 0.4385410012800542,
+    "jerk_rms_m_s3": 1.7039755006993815,
+    "command_accel_max": 3.091508911360544e-15,
+    "final_xy": [
+      0.016616872680190214,
+      -2.024054396799228
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.9468873406747371
+      ],
+      [
+        2.25,
+        -2.1
+      ]
+    ]
+  },
+  {
+    "seed": 120,
+    "method": "astar",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 2,
+      "confidence": 0.9489749441229354,
+      "rgb": [
+        0.49019607843137253,
+        0.6196078431372549,
+        1.0
+      ],
+      "saturation": 0.5098039215686274,
+      "accepted": true
+    },
+    "true_label": 2,
+    "sim_time": 8.86,
+    "path_m": 4.639812276884389,
+    "accel_rms_m_s2": 0.4614919684636008,
+    "jerk_rms_m_s3": 4.253041432080749,
+    "command_accel_max": 9.157718917194341,
+    "final_xy": [
+      2.2397560679779107,
+      -2.104970609301512
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.9468873406747371
+      ],
+      [
+        -0.1,
+        -2.5
+      ],
+      [
+        1.4000000000000001,
+        -2.5
+      ],
+      [
+        2.25,
+        -2.1
+      ]
+    ]
+  },
+  {
+    "seed": 120,
+    "method": "smooth",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 2,
+      "confidence": 0.9489749441229354,
+      "rgb": [
+        0.49019607843137253,
+        0.6196078431372549,
+        1.0
+      ],
+      "saturation": 0.5098039215686274,
+      "accepted": true
+    },
+    "true_label": 2,
+    "sim_time": 9.61,
+    "path_m": 4.740709492524365,
+    "accel_rms_m_s2": 0.2946638761753083,
+    "jerk_rms_m_s3": 0.9081583207808359,
+    "command_accel_max": 0.550000000000001,
+    "final_xy": [
+      2.318027390121369,
+      -2.0628882649481013
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.9468873406747371
+      ],
+      [
+        -0.1,
+        -2.5
+      ],
+      [
+        1.4000000000000001,
+        -2.5
+      ],
+      [
+        2.25,
+        -2.1
+      ]
+    ]
+  },
+  {
+    "seed": 121,
+    "method": "direct",
+    "success": false,
+    "goal_reached": false,
+    "collision": true,
+    "reason": "collision",
+    "perception": {
+      "label": 0,
+      "confidence": 0.9711597574052173,
+      "rgb": [
+        1.0,
+        0.47843137254901963,
+        0.4392156862745098
+      ],
+      "saturation": 0.5607843137254902,
+      "accepted": true
+    },
+    "true_label": 0,
+    "sim_time": 2.51,
+    "path_m": 1.3622144163083778,
+    "accel_rms_m_s2": 0.5529309896425008,
+    "jerk_rms_m_s3": 2.1441265596388455,
+    "command_accel_max": 3.3306690738754696e-15,
+    "final_xy": [
+      -1.2452188491920526,
+      -1.0920363558741353
+    ],
+    "route": [
+      [
+        -2.25,
+        -2.0110662849183103
+      ],
+      [
+        2.25,
+        2.1
+      ]
+    ]
+  },
+  {
+    "seed": 121,
+    "method": "astar",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 0,
+      "confidence": 0.9711597574052173,
+      "rgb": [
+        1.0,
+        0.47843137254901963,
+        0.4392156862745098
+      ],
+      "saturation": 0.5607843137254902,
+      "accepted": true
+    },
+    "true_label": 0,
+    "sim_time": 12.38,
+    "path_m": 6.733652182583209,
+    "accel_rms_m_s2": 0.40399978605340875,
+    "jerk_rms_m_s3": 3.6996118830608156,
+    "command_accel_max": 9.82593883772222,
+    "final_xy": [
+      2.2399660983816148,
+      2.0986298045352028
+    ],
+    "route": [
+      [
+        -2.25,
+        -2.0110662849183103
+      ],
+      [
+        -1.4000000000000001,
+        0.2
+      ],
+      [
+        0.0,
+        1.8
+      ],
+      [
+        2.25,
+        2.1
+      ]
+    ]
+  },
+  {
+    "seed": 121,
+    "method": "smooth",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 0,
+      "confidence": 0.9711597574052173,
+      "rgb": [
+        1.0,
+        0.47843137254901963,
+        0.4392156862745098
+      ],
+      "saturation": 0.5607843137254902,
+      "accepted": true
+    },
+    "true_label": 0,
+    "sim_time": 13.25,
+    "path_m": 6.851188781049466,
+    "accel_rms_m_s2": 0.26256851238446816,
+    "jerk_rms_m_s3": 0.7539985079648062,
+    "command_accel_max": 0.5500000000000007,
+    "final_xy": [
+      2.3254769638936574,
+      2.106842413293273
+    ],
+    "route": [
+      [
+        -2.25,
+        -2.0110662849183103
+      ],
+      [
+        -1.4000000000000001,
+        0.2
+      ],
+      [
+        0.0,
+        1.8
+      ],
+      [
+        2.25,
+        2.1
+      ]
+    ]
+  },
+  {
+    "seed": 122,
+    "method": "direct",
+    "success": false,
+    "goal_reached": false,
+    "collision": true,
+    "reason": "collision",
+    "perception": {
+      "label": 1,
+      "confidence": 0.9479098448409079,
+      "rgb": [
+        0.5137254901960784,
+        1.0,
+        0.5803921568627451
+      ],
+      "saturation": 0.4862745098039216,
+      "accepted": true
+    },
+    "true_label": 1,
+    "sim_time": 2.12,
+    "path_m": 1.1429901500682236,
+    "accel_rms_m_s2": 0.6529893648976096,
+    "jerk_rms_m_s3": 2.9240878739602287,
+    "command_accel_max": 2.482534153247273e-15,
+    "final_xy": [
+      -1.1837876949338542,
+      -1.3715226797082054
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.7978646292912155
+      ],
+      [
+        2.25,
+        0.0
+      ]
+    ]
+  },
+  {
+    "seed": 122,
+    "method": "astar",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 1,
+      "confidence": 0.9479098448409079,
+      "rgb": [
+        0.5137254901960784,
+        1.0,
+        0.5803921568627451
+      ],
+      "saturation": 0.4862745098039216,
+      "accepted": true
+    },
+    "true_label": 1,
+    "sim_time": 11.75,
+    "path_m": 6.327015751020537,
+    "accel_rms_m_s2": 0.4832011224514355,
+    "jerk_rms_m_s3": 4.776592165265821,
+    "command_accel_max": 11.302813466580256,
+    "final_xy": [
+      2.2430250026078147,
+      -0.019802727226982193
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.7978646292912155
+      ],
+      [
+        -0.1,
+        -2.5
+      ],
+      [
+        1.4000000000000001,
+        -2.5
+      ],
+      [
+        2.25,
+        0.0
+      ]
+    ]
+  },
+  {
+    "seed": 122,
+    "method": "smooth",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 1,
+      "confidence": 0.9479098448409079,
+      "rgb": [
+        0.5137254901960784,
+        1.0,
+        0.5803921568627451
+      ],
+      "saturation": 0.4862745098039216,
+      "accepted": true
+    },
+    "true_label": 1,
+    "sim_time": 12.73,
+    "path_m": 6.505786056474841,
+    "accel_rms_m_s2": 0.2909474044602411,
+    "jerk_rms_m_s3": 0.8088925991131157,
+    "command_accel_max": 0.550000000000001,
+    "final_xy": [
+      2.266478706641066,
+      0.06054940709445104
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.7978646292912155
+      ],
+      [
+        -0.1,
+        -2.5
+      ],
+      [
+        1.4000000000000001,
+        -2.5
+      ],
+      [
+        2.25,
+        0.0
+      ]
+    ]
+  },
+  {
+    "seed": 123,
+    "method": "direct",
+    "success": false,
+    "goal_reached": false,
+    "collision": true,
+    "reason": "collision",
+    "perception": {
+      "label": 2,
+      "confidence": 0.9354313887944654,
+      "rgb": [
+        0.49019607843137253,
+        0.6549019607843137,
+        1.0
+      ],
+      "saturation": 0.5098039215686274,
+      "accepted": true
+    },
+    "true_label": 2,
+    "sim_time": 2.17,
+    "path_m": 1.1595699520563163,
+    "accel_rms_m_s2": 0.6123175866853677,
+    "jerk_rms_m_s3": 2.495266416963843,
+    "command_accel_max": 2.6945789820192464e-15,
+    "final_xy": [
+      -1.0875959486289903,
+      -1.8055001036234704
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.6998257512824133
+      ],
+      [
+        2.25,
+        -2.1
+      ]
+    ]
+  },
+  {
+    "seed": 123,
+    "method": "astar",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 2,
+      "confidence": 0.9354313887944654,
+      "rgb": [
+        0.49019607843137253,
+        0.6549019607843137,
+        1.0
+      ],
+      "saturation": 0.5098039215686274,
+      "accepted": true
+    },
+    "true_label": 2,
+    "sim_time": 8.97,
+    "path_m": 4.694001300853527,
+    "accel_rms_m_s2": 0.4734902336497462,
+    "jerk_rms_m_s3": 4.467147192315416,
+    "command_accel_max": 9.188342226790892,
+    "final_xy": [
+      2.23678140883747,
+      -2.105002000923115
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.6998257512824133
+      ],
+      [
+        -0.1,
+        -2.5
+      ],
+      [
+        1.2000000000000002,
+        -2.5
+      ],
+      [
+        2.25,
+        -2.1
+      ]
+    ]
+  },
+  {
+    "seed": 123,
+    "method": "smooth",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 2,
+      "confidence": 0.9354313887944654,
+      "rgb": [
+        0.49019607843137253,
+        0.6549019607843137,
+        1.0
+      ],
+      "saturation": 0.5098039215686274,
+      "accepted": true
+    },
+    "true_label": 2,
+    "sim_time": 9.69,
+    "path_m": 4.78805793637501,
+    "accel_rms_m_s2": 0.2955802340488595,
+    "jerk_rms_m_s3": 0.9288335652073308,
+    "command_accel_max": 0.550000000000001,
+    "final_xy": [
+      2.314613950826451,
+      -2.072601425485962
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.6998257512824133
+      ],
+      [
+        -0.1,
+        -2.5
+      ],
+      [
+        1.2000000000000002,
+        -2.5
+      ],
+      [
+        2.25,
+        -2.1
+      ]
+    ]
+  },
+  {
+    "seed": 124,
+    "method": "direct",
+    "success": false,
+    "goal_reached": false,
+    "collision": true,
+    "reason": "collision",
+    "perception": {
+      "label": 0,
+      "confidence": 0.9758414832992417,
+      "rgb": [
+        1.0,
+        0.4627450980392157,
+        0.4235294117647059
+      ],
+      "saturation": 0.5764705882352941,
+      "accepted": true
+    },
+    "true_label": 0,
+    "sim_time": 2.69,
+    "path_m": 1.438761890353016,
+    "accel_rms_m_s2": 0.5132514376631866,
+    "jerk_rms_m_s3": 1.8319391036386636,
+    "command_accel_max": 3.510833468576701e-15,
+    "final_xy": [
+      -1.1959833426390514,
+      -1.1792133710120911
+    ],
+    "route": [
+      [
+        -2.25,
+        -2.183900608140501
+      ],
+      [
+        2.25,
+        2.1
+      ]
+    ]
+  },
+  {
+    "seed": 124,
+    "method": "astar",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 0,
+      "confidence": 0.9758414832992417,
+      "rgb": [
+        1.0,
+        0.4627450980392157,
+        0.4235294117647059
+      ],
+      "saturation": 0.5764705882352941,
+      "accepted": true
+    },
+    "true_label": 0,
+    "sim_time": 12.71,
+    "path_m": 6.940704900404215,
+    "accel_rms_m_s2": 0.3802273969126208,
+    "jerk_rms_m_s3": 3.3206471267152584,
+    "command_accel_max": 9.684913415436766,
+    "final_xy": [
+      2.246346328164705,
+      2.09965967767949
+    ],
+    "route": [
+      [
+        -2.25,
+        -2.183900608140501
+      ],
+      [
+        -1.3,
+        0.4
+      ],
+      [
+        0.1,
+        1.9000000000000001
+      ],
+      [
+        2.25,
+        2.1
+      ]
+    ]
+  },
+  {
+    "seed": 124,
+    "method": "smooth",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 0,
+      "confidence": 0.9758414832992417,
+      "rgb": [
+        1.0,
+        0.4627450980392157,
+        0.4235294117647059
+      ],
+      "saturation": 0.5764705882352941,
+      "accepted": true
+    },
+    "true_label": 0,
+    "sim_time": 13.59,
+    "path_m": 7.071531732530527,
+    "accel_rms_m_s2": 0.2533624041483821,
+    "jerk_rms_m_s3": 0.6944829197750457,
+    "command_accel_max": 0.550000000000001,
+    "final_xy": [
+      2.3414235957086262,
+      2.103826145280434
+    ],
+    "route": [
+      [
+        -2.25,
+        -2.183900608140501
+      ],
+      [
+        -1.3,
+        0.4
+      ],
+      [
+        0.1,
+        1.9000000000000001
+      ],
+      [
+        2.25,
+        2.1
+      ]
+    ]
+  },
+  {
+    "seed": 125,
+    "method": "direct",
+    "success": false,
+    "goal_reached": false,
+    "collision": true,
+    "reason": "collision",
+    "perception": {
+      "label": 1,
+      "confidence": 0.9660122319855173,
+      "rgb": [
+        0.45098039215686275,
+        1.0,
+        0.5568627450980392
+      ],
+      "saturation": 0.5490196078431373,
+      "accepted": true
+    },
+    "true_label": 1,
+    "sim_time": 2.22,
+    "path_m": 1.1500098303138366,
+    "accel_rms_m_s2": 0.5319425907832611,
+    "jerk_rms_m_s3": 1.7128627067040918,
+    "command_accel_max": 2.482534153247273e-15,
+    "final_xy": [
+      -1.1762477542391587,
+      -1.3617856108715556
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.7888738786712024
+      ],
+      [
+        2.25,
+        0.0
+      ]
+    ]
+  },
+  {
+    "seed": 125,
+    "method": "astar",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 1,
+      "confidence": 0.9660122319855173,
+      "rgb": [
+        0.45098039215686275,
+        1.0,
+        0.5568627450980392
+      ],
+      "saturation": 0.5490196078431373,
+      "accepted": true
+    },
+    "true_label": 1,
+    "sim_time": 11.66,
+    "path_m": 6.250890634348355,
+    "accel_rms_m_s2": 0.40467606980391924,
+    "jerk_rms_m_s3": 3.3377069518803952,
+    "command_accel_max": 11.048261056173857,
+    "final_xy": [
+      2.252469383018328,
+      0.005981777458245559
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.7888738786712024
+      ],
+      [
+        -0.1,
+        -2.5
+      ],
+      [
+        1.2000000000000002,
+        -2.5
+      ],
+      [
+        2.25,
+        0.0
+      ]
+    ]
+  },
+  {
+    "seed": 125,
+    "method": "smooth",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 1,
+      "confidence": 0.9660122319855173,
+      "rgb": [
+        0.45098039215686275,
+        1.0,
+        0.5568627450980392
+      ],
+      "saturation": 0.5490196078431373,
+      "accepted": true
+    },
+    "true_label": 1,
+    "sim_time": 12.68,
+    "path_m": 6.429770445807406,
+    "accel_rms_m_s2": 0.2700525975502571,
+    "jerk_rms_m_s3": 0.654417749740551,
+    "command_accel_max": 0.550000000000001,
+    "final_xy": [
+      2.2804749391477923,
+      0.09069857354088445
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.7888738786712024
+      ],
+      [
+        -0.1,
+        -2.5
+      ],
+      [
+        1.2000000000000002,
+        -2.5
+      ],
+      [
+        2.25,
+        0.0
+      ]
+    ]
+  },
+  {
+    "seed": 126,
+    "method": "direct",
+    "success": false,
+    "goal_reached": false,
+    "collision": true,
+    "reason": "collision",
+    "perception": {
+      "label": 2,
+      "confidence": 0.938445763083826,
+      "rgb": [
+        0.4470588235294118,
+        0.6666666666666666,
+        1.0
+      ],
+      "saturation": 0.5529411764705883,
+      "accepted": true
+    },
+    "true_label": 2,
+    "sim_time": 3.86,
+    "path_m": 2.135311548221585,
+    "accel_rms_m_s2": 0.3968779826248032,
+    "jerk_rms_m_s3": 1.2413044090571224,
+    "command_accel_max": 4.518280359883027e-15,
+    "final_xy": [
+      -0.12118069674982476,
+      -1.9255981614050581
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.7689011819999358
+      ],
+      [
+        2.25,
+        -2.1
+      ]
+    ]
+  },
+  {
+    "seed": 126,
+    "method": "astar",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 2,
+      "confidence": 0.938445763083826,
+      "rgb": [
+        0.4470588235294118,
+        0.6666666666666666,
+        1.0
+      ],
+      "saturation": 0.5529411764705883,
+      "accepted": true
+    },
+    "true_label": 2,
+    "sim_time": 9.13,
+    "path_m": 4.773742815831648,
+    "accel_rms_m_s2": 0.4063487765323286,
+    "jerk_rms_m_s3": 3.3586996137882688,
+    "command_accel_max": 9.156590078490634,
+    "final_xy": [
+      2.258050110485422,
+      -2.096305017572557
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.7689011819999358
+      ],
+      [
+        -0.2,
+        -2.6
+      ],
+      [
+        1.2000000000000002,
+        -2.6
+      ],
+      [
+        2.25,
+        -2.1
+      ]
+    ]
+  },
+  {
+    "seed": 126,
+    "method": "smooth",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 2,
+      "confidence": 0.938445763083826,
+      "rgb": [
+        0.4470588235294118,
+        0.6666666666666666,
+        1.0
+      ],
+      "saturation": 0.5529411764705883,
+      "accepted": true
+    },
+    "true_label": 2,
+    "sim_time": 9.89,
+    "path_m": 4.878912719946769,
+    "accel_rms_m_s2": 0.2744545390456593,
+    "jerk_rms_m_s3": 0.7624531769785926,
+    "command_accel_max": 0.5500000000000007,
+    "final_xy": [
+      2.3367433759196254,
+      -2.052056971913733
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.7689011819999358
+      ],
+      [
+        -0.2,
+        -2.6
+      ],
+      [
+        1.2000000000000002,
+        -2.6
+      ],
+      [
+        2.25,
+        -2.1
+      ]
+    ]
+  },
+  {
+    "seed": 127,
+    "method": "direct",
+    "success": false,
+    "goal_reached": false,
+    "collision": true,
+    "reason": "collision",
+    "perception": {
+      "label": 0,
+      "confidence": 0.9733901110135937,
+      "rgb": [
+        1.0,
+        0.4823529411764706,
+        0.41568627450980394
+      ],
+      "saturation": 0.584313725490196,
+      "accepted": true
+    },
+    "true_label": 0,
+    "sim_time": 2.08,
+    "path_m": 1.0638333707728913,
+    "accel_rms_m_s2": 0.5571649816715729,
+    "jerk_rms_m_s3": 1.8323628678132877,
+    "command_accel_max": 3.3306690738754696e-15,
+    "final_xy": [
+      -1.42703381753539,
+      -0.984399210389224
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.6761360768832911
+      ],
+      [
+        2.25,
+        2.1
+      ]
+    ]
+  },
+  {
+    "seed": 127,
+    "method": "astar",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 0,
+      "confidence": 0.9733901110135937,
+      "rgb": [
+        1.0,
+        0.4823529411764706,
+        0.41568627450980394
+      ],
+      "saturation": 0.584313725490196,
+      "accepted": true
+    },
+    "true_label": 0,
+    "sim_time": 12.23,
+    "path_m": 6.614934974595419,
+    "accel_rms_m_s2": 0.37746920750370055,
+    "jerk_rms_m_s3": 3.1740802671941575,
+    "command_accel_max": 10.124548036216042,
+    "final_xy": [
+      2.2549165547187653,
+      2.100377097939929
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.6761360768832911
+      ],
+      [
+        -1.6,
+        0.1
+      ],
+      [
+        -0.2,
+        1.9000000000000001
+      ],
+      [
+        2.25,
+        2.1
+      ]
+    ]
+  },
+  {
+    "seed": 127,
+    "method": "smooth",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 0,
+      "confidence": 0.9733901110135937,
+      "rgb": [
+        1.0,
+        0.4823529411764706,
+        0.41568627450980394
+      ],
+      "saturation": 0.584313725490196,
+      "accepted": true
+    },
+    "true_label": 0,
+    "sim_time": 13.12,
+    "path_m": 6.754921892655089,
+    "accel_rms_m_s2": 0.2564351062583244,
+    "jerk_rms_m_s3": 0.6722548194571406,
+    "command_accel_max": 0.5500000000000007,
+    "final_xy": [
+      2.3516045052008723,
+      2.102768547845215
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.6761360768832911
+      ],
+      [
+        -1.6,
+        0.1
+      ],
+      [
+        -0.2,
+        1.9000000000000001
+      ],
+      [
+        2.25,
+        2.1
+      ]
+    ]
+  },
+  {
+    "seed": 128,
+    "method": "direct",
+    "success": false,
+    "goal_reached": false,
+    "collision": true,
+    "reason": "collision",
+    "perception": {
+      "label": 1,
+      "confidence": 0.9688705000284473,
+      "rgb": [
+        0.47058823529411764,
+        1.0,
+        0.5333333333333333
+      ],
+      "saturation": 0.5294117647058824,
+      "accepted": true
+    },
+    "true_label": 1,
+    "sim_time": 2.1,
+    "path_m": 1.0619357925242154,
+    "accel_rms_m_s2": 0.5540653722780007,
+    "jerk_rms_m_s3": 1.803576611363083,
+    "command_accel_max": 4.7428748402675465e-15,
+    "final_xy": [
+      -1.235546771590712,
+      -1.3174900384699153
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.7016214897998163
+      ],
+      [
+        2.25,
+        0.0
+      ]
+    ]
+  },
+  {
+    "seed": 128,
+    "method": "astar",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 1,
+      "confidence": 0.9688705000284473,
+      "rgb": [
+        0.47058823529411764,
+        1.0,
+        0.5333333333333333
+      ],
+      "saturation": 0.5294117647058824,
+      "accepted": true
+    },
+    "true_label": 1,
+    "sim_time": 11.71,
+    "path_m": 6.291774545747406,
+    "accel_rms_m_s2": 0.4044615634865475,
+    "jerk_rms_m_s3": 3.332694324055598,
+    "command_accel_max": 11.074943811720605,
+    "final_xy": [
+      2.252252007390843,
+      0.005450900269702189
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.7016214897998163
+      ],
+      [
+        -0.30000000000000004,
+        -2.5
+      ],
+      [
+        1.2000000000000002,
+        -2.5
+      ],
+      [
+        2.25,
+        0.0
+      ]
+    ]
+  },
+  {
+    "seed": 128,
+    "method": "smooth",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 1,
+      "confidence": 0.9688705000284473,
+      "rgb": [
+        0.47058823529411764,
+        1.0,
+        0.5333333333333333
+      ],
+      "saturation": 0.5294117647058824,
+      "accepted": true
+    },
+    "true_label": 1,
+    "sim_time": 12.77,
+    "path_m": 6.471530365476266,
+    "accel_rms_m_s2": 0.2726331688679325,
+    "jerk_rms_m_s3": 0.6547588137269987,
+    "command_accel_max": 0.5500000000000012,
+    "final_xy": [
+      2.2796550552743167,
+      0.08806644010331657
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.7016214897998163
+      ],
+      [
+        -0.30000000000000004,
+        -2.5
+      ],
+      [
+        1.2000000000000002,
+        -2.5
+      ],
+      [
+        2.25,
+        0.0
+      ]
+    ]
+  },
+  {
+    "seed": 129,
+    "method": "direct",
+    "success": false,
+    "goal_reached": false,
+    "collision": true,
+    "reason": "collision",
+    "perception": {
+      "label": 2,
+      "confidence": 0.9514081062365259,
+      "rgb": [
+        0.4627450980392157,
+        0.6274509803921569,
+        1.0
+      ],
+      "saturation": 0.5372549019607843,
+      "accepted": true
+    },
+    "true_label": 2,
+    "sim_time": 4.13,
+    "path_m": 2.3241710926305807,
+    "accel_rms_m_s2": 0.4347812766329698,
+    "jerk_rms_m_s3": 1.7005435496012076,
+    "command_accel_max": 4.449557262054371e-15,
+    "final_xy": [
+      0.07618353987595353,
+      -1.9110559107114724
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.7086268710012382
+      ],
+      [
+        2.25,
+        -2.1
+      ]
+    ]
+  },
+  {
+    "seed": 129,
+    "method": "astar",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 2,
+      "confidence": 0.9514081062365259,
+      "rgb": [
+        0.4627450980392157,
+        0.6274509803921569,
+        1.0
+      ],
+      "saturation": 0.5372549019607843,
+      "accepted": true
+    },
+    "true_label": 2,
+    "sim_time": 8.97,
+    "path_m": 4.697472094886444,
+    "accel_rms_m_s2": 0.4633424482649026,
+    "jerk_rms_m_s3": 4.286374699604088,
+    "command_accel_max": 9.051944605012768,
+    "final_xy": [
+      2.2400014800726877,
+      -2.104832527567401
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.7086268710012382
+      ],
+      [
+        0.1,
+        -2.5
+      ],
+      [
+        1.4000000000000001,
+        -2.5
+      ],
+      [
+        2.25,
+        -2.1
+      ]
+    ]
+  },
+  {
+    "seed": 129,
+    "method": "smooth",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 2,
+      "confidence": 0.9514081062365259,
+      "rgb": [
+        0.4627450980392157,
+        0.6274509803921569,
+        1.0
+      ],
+      "saturation": 0.5372549019607843,
+      "accepted": true
+    },
+    "true_label": 2,
+    "sim_time": 9.72,
+    "path_m": 4.80173560272042,
+    "accel_rms_m_s2": 0.2944685029526174,
+    "jerk_rms_m_s3": 0.9080643814817635,
+    "command_accel_max": 0.5500000000000007,
+    "final_xy": [
+      2.3191088366971777,
+      -2.0622175989262703
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.7086268710012382
+      ],
+      [
+        0.1,
+        -2.5
+      ],
+      [
+        1.4000000000000001,
+        -2.5
+      ],
+      [
+        2.25,
+        -2.1
+      ]
+    ]
+  }
+]

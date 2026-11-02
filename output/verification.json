@@ -1,0 +1,16 @@
+{
+  "core_source_and_model_hashes": "match evaluation manifest",
+  "episodes": 90,
+  "trace_metrics": "recomputed and matched",
+  "system_tests": "9 passed",
+  "pdf_pages": 3,
+  "pdf_font_embedded": true,
+  "pdf_status": "verified",
+  "video": {
+    "frames": 1836,
+    "seconds": 91.8,
+    "decode_errors": 0
+  },
+  "text_files_scanned": 17,
+  "note": "Visual review is documented separately; limited automated checks are not a universal privacy guarantee."
+}

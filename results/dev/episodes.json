@@ -1,0 +1,401 @@
+[
+  {
+    "seed": 10,
+    "method": "direct",
+    "success": false,
+    "goal_reached": false,
+    "collision": true,
+    "reason": "collision",
+    "perception": {
+      "label": 0,
+      "confidence": 0.9699551090261608,
+      "rgb": [
+        1.0,
+        0.49019607843137253,
+        0.43137254901960786
+      ],
+      "saturation": 0.5686274509803921,
+      "accepted": true
+    },
+    "true_label": 0,
+    "sim_time": 2.75,
+    "path_m": 1.45189647542375,
+    "accel_rms_m_s2": 0.482893058610219,
+    "jerk_rms_m_s3": 1.567819049791308,
+    "command_accel_max": 3.510833468576701e-15,
+    "final_xy": [
+      -1.1419468397812664,
+      -0.8779793407723817
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.8521262881422647
+      ],
+      [
+        2.25,
+        2.1
+      ]
+    ]
+  },
+  {
+    "seed": 10,
+    "method": "astar",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 0,
+      "confidence": 0.9699551090261608,
+      "rgb": [
+        1.0,
+        0.49019607843137253,
+        0.43137254901960786
+      ],
+      "saturation": 0.5686274509803921,
+      "accepted": true
+    },
+    "true_label": 0,
+    "sim_time": 11.98,
+    "path_m": 6.482709382565303,
+    "accel_rms_m_s2": 0.3679261850394372,
+    "jerk_rms_m_s3": 3.086655041174312,
+    "command_accel_max": 9.421224900380881,
+    "final_xy": [
+      2.2553865858383264,
+      2.10097967468316
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.8521262881422647
+      ],
+      [
+        -1.2000000000000002,
+        0.30000000000000004
+      ],
+      [
+        0.1,
+        1.7000000000000002
+      ],
+      [
+        2.25,
+        2.1
+      ]
+    ]
+  },
+  {
+    "seed": 10,
+    "method": "smooth",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 0,
+      "confidence": 0.9699551090261608,
+      "rgb": [
+        1.0,
+        0.49019607843137253,
+        0.43137254901960786
+      ],
+      "saturation": 0.5686274509803921,
+      "accepted": true
+    },
+    "true_label": 0,
+    "sim_time": 12.77,
+    "path_m": 6.598498731776891,
+    "accel_rms_m_s2": 0.24914634480374342,
+    "jerk_rms_m_s3": 0.6806280740217164,
+    "command_accel_max": 0.5500000000000008,
+    "final_xy": [
+      2.3418497083949,
+      2.1125157132296017
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.8521262881422647
+      ],
+      [
+        -1.2000000000000002,
+        0.30000000000000004
+      ],
+      [
+        0.1,
+        1.7000000000000002
+      ],
+      [
+        2.25,
+        2.1
+      ]
+    ]
+  },
+  {
+    "seed": 11,
+    "method": "direct",
+    "success": false,
+    "goal_reached": false,
+    "collision": true,
+    "reason": "collision",
+    "perception": {
+      "label": 1,
+      "confidence": 0.9537375476228737,
+      "rgb": [
+        0.4980392156862745,
+        1.0,
+        0.5725490196078431
+      ],
+      "saturation": 0.5019607843137255,
+      "accepted": true
+    },
+    "true_label": 1,
+    "sim_time": 2.43,
+    "path_m": 1.3193494575421052,
+    "accel_rms_m_s2": 0.6018483496164497,
+    "jerk_rms_m_s3": 2.620997400540558,
+    "command_accel_max": 3.1401849173675502e-15,
+    "final_xy": [
+      -1.0585002296340955,
+      -1.659459794657626
+    ],
+    "route": [
+      [
+        -2.25,
+        -2.254226625499772
+      ],
+      [
+        2.25,
+        0.0
+      ]
+    ]
+  },
+  {
+    "seed": 11,
+    "method": "astar",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 1,
+      "confidence": 0.9537375476228737,
+      "rgb": [
+        0.4980392156862745,
+        1.0,
+        0.5725490196078431
+      ],
+      "saturation": 0.5019607843137255,
+      "accepted": true
+    },
+    "true_label": 1,
+    "sim_time": 11.29,
+    "path_m": 6.046270587866745,
+    "accel_rms_m_s2": 0.4478197115496558,
+    "jerk_rms_m_s3": 4.5261127082585,
+    "command_accel_max": 10.08591830106033,
+    "final_xy": [
+      2.241904508800191,
+      -0.01808136153543262
+    ],
+    "route": [
+      [
+        -2.25,
+        -2.254226625499772
+      ],
+      [
+        0.9,
+        -2.5
+      ],
+      [
+        1.2000000000000002,
+        -2.4000000000000004
+      ],
+      [
+        2.25,
+        0.0
+      ]
+    ]
+  },
+  {
+    "seed": 11,
+    "method": "smooth",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 1,
+      "confidence": 0.9537375476228737,
+      "rgb": [
+        0.4980392156862745,
+        1.0,
+        0.5725490196078431
+      ],
+      "saturation": 0.5019607843137255,
+      "accepted": true
+    },
+    "true_label": 1,
+    "sim_time": 12.24,
+    "path_m": 6.16453170711582,
+    "accel_rms_m_s2": 0.27011408890398003,
+    "jerk_rms_m_s3": 0.8489695201155159,
+    "command_accel_max": 0.5500000000000012,
+    "final_xy": [
+      2.2761707067488204,
+      0.06212563192210105
+    ],
+    "route": [
+      [
+        -2.25,
+        -2.254226625499772
+      ],
+      [
+        0.9,
+        -2.5
+      ],
+      [
+        1.2000000000000002,
+        -2.4000000000000004
+      ],
+      [
+        2.25,
+        0.0
+      ]
+    ]
+  },
+  {
+    "seed": 12,
+    "method": "direct",
+    "success": false,
+    "goal_reached": false,
+    "collision": true,
+    "reason": "collision",
+    "perception": {
+      "label": 2,
+      "confidence": 0.9507504845891376,
+      "rgb": [
+        0.49411764705882355,
+        0.611764705882353,
+        1.0
+      ],
+      "saturation": 0.5058823529411764,
+      "accepted": true
+    },
+    "true_label": 2,
+    "sim_time": 3.88,
+    "path_m": 2.1903280419829754,
+    "accel_rms_m_s2": 0.47706027214094454,
+    "jerk_rms_m_s3": 2.083874424144258,
+    "command_accel_max": 2.6945789820192464e-15,
+    "final_xy": [
+      -0.05183775758907551,
+      -1.9794567488978934
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.86421026719769
+      ],
+      [
+        2.25,
+        -2.1
+      ]
+    ]
+  },
+  {
+    "seed": 12,
+    "method": "astar",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 2,
+      "confidence": 0.9507504845891376,
+      "rgb": [
+        0.49411764705882355,
+        0.611764705882353,
+        1.0
+      ],
+      "saturation": 0.5058823529411764,
+      "accepted": true
+    },
+    "true_label": 2,
+    "sim_time": 9.02,
+    "path_m": 4.714139075086703,
+    "accel_rms_m_s2": 0.49910214903882666,
+    "jerk_rms_m_s3": 4.895416438894071,
+    "command_accel_max": 9.373913666701439,
+    "final_xy": [
+      2.2326299102785643,
+      -2.108976951300728
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.86421026719769
+      ],
+      [
+        -0.1,
+        -2.6
+      ],
+      [
+        1.3,
+        -2.6
+      ],
+      [
+        2.25,
+        -2.1
+      ]
+    ]
+  },
+  {
+    "seed": 12,
+    "method": "smooth",
+    "success": true,
+    "goal_reached": true,
+    "collision": false,
+    "reason": "delivered",
+    "perception": {
+      "label": 2,
+      "confidence": 0.9507504845891376,
+      "rgb": [
+        0.49411764705882355,
+        0.611764705882353,
+        1.0
+      ],
+      "saturation": 0.5058823529411764,
+      "accepted": true
+    },
+    "true_label": 2,
+    "sim_time": 9.69,
+    "path_m": 4.804246708366588,
+    "accel_rms_m_s2": 0.30254670389430816,
+    "jerk_rms_m_s3": 0.9704333667301271,
+    "command_accel_max": 0.5500000000000012,
+    "final_xy": [
+      2.299398317328177,
+      -2.070621100856374
+    ],
+    "route": [
+      [
+        -2.25,
+        -1.86421026719769
+      ],
+      [
+        -0.1,
+        -2.6
+      ],
+      [
+        1.3,
+        -2.6
+      ],
+      [
+        2.25,
+        -2.1
+      ]
+    ]
+  }
+]

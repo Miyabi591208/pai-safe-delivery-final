@@ -1,0 +1,279 @@
+{
+  "fps": 20,
+  "frames": 1836,
+  "duration_seconds": 91.8,
+  "resolution": [
+    1280,
+    720
+  ],
+  "audio": "none; Japanese captions",
+  "playback": "Simulation segments 1x, plus clearly marked stills",
+  "chapters": [
+    {
+      "title": "課題と目的",
+      "start_seconds": 0.0,
+      "duration_seconds": 7
+    },
+    {
+      "title": "構成",
+      "start_seconds": 7.0,
+      "duration_seconds": 9
+    },
+    {
+      "title": "比較：直進のみでは棚に衝突",
+      "start_seconds": 16.0,
+      "duration_seconds": 2.65,
+      "sim_time": 2.65,
+      "speed": "1x"
+    },
+    {
+      "title": "結果静止表示",
+      "start_seconds": 18.65,
+      "duration_seconds": 3
+    },
+    {
+      "title": "実演 1：赤い荷物を赤い搬送先へ",
+      "start_seconds": 21.65,
+      "duration_seconds": 12.85,
+      "sim_time": 12.83,
+      "speed": "1x"
+    },
+    {
+      "title": "結果静止表示",
+      "start_seconds": 34.5,
+      "duration_seconds": 3
+    },
+    {
+      "title": "実演 2：緑の荷物 / 別の配置・照明",
+      "start_seconds": 37.5,
+      "duration_seconds": 12.55,
+      "sim_time": 12.51,
+      "speed": "1x"
+    },
+    {
+      "title": "結果静止表示",
+      "start_seconds": 50.05,
+      "duration_seconds": 3
+    },
+    {
+      "title": "実演 3：青い荷物 / 別の配置・質量",
+      "start_seconds": 53.05,
+      "duration_seconds": 9.75,
+      "sim_time": 9.74,
+      "speed": "1x"
+    },
+    {
+      "title": "結果静止表示",
+      "start_seconds": 62.8,
+      "duration_seconds": 3
+    },
+    {
+      "title": "未知色の拒否",
+      "start_seconds": 65.8,
+      "duration_seconds": 7
+    },
+    {
+      "title": "実測結果",
+      "start_seconds": 72.8,
+      "duration_seconds": 10
+    },
+    {
+      "title": "工夫と限界",
+      "start_seconds": 82.8,
+      "duration_seconds": 9
+    }
+  ],
+  "demos": [
+    {
+      "seed": 100,
+      "method": "direct",
+      "success": false,
+      "goal_reached": false,
+      "collision": true,
+      "reason": "collision",
+      "perception": {
+        "label": 0,
+        "confidence": 0.9660531795266929,
+        "rgb": [
+          1.0,
+          0.5058823529411764,
+          0.43529411764705883
+        ],
+        "saturation": 0.5647058823529412,
+        "accepted": true
+      },
+      "true_label": 0,
+      "sim_time": 2.65,
+      "path_m": 1.3873347324182417,
+      "accel_rms_m_s2": 0.4856762085508967,
+      "jerk_rms_m_s3": 1.5397718851415965,
+      "command_accel_max": 4.002966042486721e-15,
+      "final_xy": [
+        -1.1822377203502494,
+        -0.8636105125292554
+      ],
+      "route": [
+        [
+          -2.25,
+          -1.786328943127831
+        ],
+        [
+          2.25,
+          2.1
+        ]
+      ]
+    },
+    {
+      "seed": 100,
+      "method": "smooth",
+      "success": true,
+      "goal_reached": true,
+      "collision": false,
+      "reason": "delivered",
+      "perception": {
+        "label": 0,
+        "confidence": 0.9660531795266929,
+        "rgb": [
+          1.0,
+          0.5058823529411764,
+          0.43529411764705883
+        ],
+        "saturation": 0.5647058823529412,
+        "accepted": true
+      },
+      "true_label": 0,
+      "sim_time": 12.83,
+      "path_m": 6.615255156146502,
+      "accel_rms_m_s2": 0.24799988065256204,
+      "jerk_rms_m_s3": 0.6683409266239079,
+      "command_accel_max": 0.5500000000000012,
+      "final_xy": [
+        2.353156436773041,
+        2.1163063794229044
+      ],
+      "route": [
+        [
+          -2.25,
+          -1.786328943127831
+        ],
+        [
+          -1.3,
+          0.30000000000000004
+        ],
+        [
+          -0.2,
+          1.6
+        ],
+        [
+          2.25,
+          2.1
+        ]
+      ]
+    },
+    {
+      "seed": 101,
+      "method": "smooth",
+      "success": true,
+      "goal_reached": true,
+      "collision": false,
+      "reason": "delivered",
+      "perception": {
+        "label": 1,
+        "confidence": 0.952881531676161,
+        "rgb": [
+          0.4745098039215686,
+          1.0,
+          0.5882352941176471
+        ],
+        "saturation": 0.5254901960784314,
+        "accepted": true
+      },
+      "true_label": 1,
+      "sim_time": 12.51,
+      "path_m": 6.382624210730439,
+      "accel_rms_m_s2": 0.28398582438231457,
+      "jerk_rms_m_s3": 0.7472628425117146,
+      "command_accel_max": 0.550000000000001,
+      "final_xy": [
+        2.2738810652849595,
+        0.07380761675858694
+      ],
+      "route": [
+        [
+          -2.25,
+          -1.7349344959589297
+        ],
+        [
+          0.0,
+          -2.5
+        ],
+        [
+          1.3,
+          -2.4000000000000004
+        ],
+        [
+          2.25,
+          0.0
+        ]
+      ]
+    },
+    {
+      "seed": 102,
+      "method": "smooth",
+      "success": true,
+      "goal_reached": true,
+      "collision": false,
+      "reason": "delivered",
+      "perception": {
+        "label": 2,
+        "confidence": 0.9527428264147423,
+        "rgb": [
+          0.4627450980392157,
+          0.6235294117647059,
+          1.0
+        ],
+        "saturation": 0.5372549019607843,
+        "accepted": true
+      },
+      "true_label": 2,
+      "sim_time": 9.74,
+      "path_m": 4.817486777717179,
+      "accel_rms_m_s2": 0.28540184151040643,
+      "jerk_rms_m_s3": 0.8491586694752503,
+      "command_accel_max": 0.550000000000001,
+      "final_xy": [
+        2.3275955479213275,
+        -2.057295935811655
+      ],
+      "route": [
+        [
+          -2.25,
+          -1.7206176705829481
+        ],
+        [
+          -0.1,
+          -2.5
+        ],
+        [
+          1.4000000000000001,
+          -2.5
+        ],
+        [
+          2.25,
+          -2.1
+        ]
+      ]
+    }
+  ],
+  "gray_prediction": {
+    "label": null,
+    "confidence": 0.3596395585462698,
+    "rgb": [
+      0.9529411764705882,
+      0.9529411764705882,
+      0.9529411764705882
+    ],
+    "saturation": 0.0,
+    "accepted": false
+  }
+}

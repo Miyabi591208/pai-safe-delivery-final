@@ -1,0 +1,54 @@
+{
+  "train_seed": 2026,
+  "test_seed": 2027,
+  "initialization_seed": 7,
+  "train_n": 6000,
+  "test_n": 1500,
+  "epochs": 500,
+  "test_accuracy": 1.0,
+  "confusion_matrix": [
+    [
+      489,
+      0,
+      0
+    ],
+    [
+      0,
+      509,
+      0
+    ],
+    [
+      0,
+      0,
+      502
+    ]
+  ],
+  "history": [
+    {
+      "epoch": 0,
+      "cross_entropy": 1.2702025274879423
+    },
+    {
+      "epoch": 100,
+      "cross_entropy": 0.02243520795284895
+    },
+    {
+      "epoch": 200,
+      "cross_entropy": 0.009379582278112883
+    },
+    {
+      "epoch": 300,
+      "cross_entropy": 0.005829050696106169
+    },
+    {
+      "epoch": 400,
+      "cross_entropy": 0.004208330618505641
+    },
+    {
+      "epoch": 499,
+      "cross_entropy": 0.003294442302801206
+    }
+  ],
+  "architecture": "3 normalized RGB -> tanh(16) -> softmax(3)",
+  "note": "Synthetic test only; not evidence of general real-world recognition."
+}

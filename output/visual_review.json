@@ -1,0 +1,18 @@
+{
+  "review_date": "2026-11-02",
+  "reviewer": "Codex",
+  "pdf": {
+    "pages_rendered_and_viewed": [1, 2, 3],
+    "render_width_height_limit_px": 1400,
+    "japanese_glyphs": "visible; TrueType font embedded",
+    "layout": "no clipping or overlap observed"
+  },
+  "video": {
+    "sampled_seconds_viewed": [0, 9, 16, 20, 27, 40, 55, 66, 76, 86],
+    "resolution": [1280, 720],
+    "captions": "readable in sampled frames",
+    "final_result_still": "rendered from exact terminal physics state",
+    "source": "MuJoCo rollouts, matched against recorded evaluation",
+    "note": "Sampled visual inspection plus full decode check; not a claim of manually viewing every frame."
+  }
+}

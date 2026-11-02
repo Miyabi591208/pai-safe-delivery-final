@@ -1,0 +1,27 @@
+{
+  "direct": {
+    "n": 3,
+    "successes": 0,
+    "collisions": 3
+  },
+  "astar": {
+    "n": 3,
+    "successes": 3,
+    "collisions": 0,
+    "paired_n": 3,
+    "paired_mean_sim_time": 10.763333333333334,
+    "paired_mean_path_m": 5.74770634850625,
+    "paired_mean_accel_rms_m_s2": 0.43828268187597325,
+    "paired_mean_jerk_rms_m_s3": 4.169394729442295
+  },
+  "smooth": {
+    "n": 3,
+    "successes": 3,
+    "collisions": 0,
+    "paired_n": 3,
+    "paired_mean_sim_time": 11.566666666666665,
+    "paired_mean_path_m": 5.855759049086433,
+    "paired_mean_accel_rms_m_s2": 0.27393571253401056,
+    "paired_mean_jerk_rms_m_s3": 0.8333436536224531
+  }
+}
